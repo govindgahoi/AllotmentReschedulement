@@ -1,0 +1,121 @@
+﻿
+<div id="Buildingletter" style="padding: 10px 10px; margin: 5px 5px; font-family: Segoe UI, Helvetica, Calibri; background:#fff;">
+<style>
+    .clearfix {
+        clear:both;
+    }
+    .div-4col {
+        width:33%
+    }
+    .pull-right {
+        float:right;
+    }
+
+    .list-unstyled {
+        list-style-type: none;
+    }
+
+    .div-report .hide_me {
+        display: none;
+    }
+
+</style>
+
+
+        <div class="div-report" runat="server">
+            <div class="row">
+                <div class="div-4col" style="float:left">
+                    <b style="font-weight:700; font-size:18px">U.P. State Industrial  Development Corporation Ltd.</b>
+                </div>
+                <div class="div-4col" style="float: left; text-align:center">
+                    <img src="http://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none;height: 73px;margin-bottom: 0;margin-top: 30px;" />
+                </div>
+                <div class="div-4col text-left" style="float: left;font-size:13px;">
+                    <ul class="list-unstyled header-ul pull-right">
+                        <li><b><span>{{RegionalOffice}}</span></b></li>
+                        <li><b><span>{{OfficeAddress1}}</span></b></li>
+                        <li><b><span>{{OfficeAddress2}}</span></b></li>
+                        <li><b>Tel No. : <span>{{TelNo}}</span></b></li>
+                        <li><b>Email ID: <span>{{EmailId}}</span></b></li>
+                        <li><b>Website: www.onlineupsidc.com</b></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div style="border-bottom: 3px solid #ffc511;"></div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="div-6col" style="width:40%; float:left">Ref.No: <span class="PreviewClass">{{RefNo}}</span></div>
+                <div class="div-3col" style="width:30%; float:left;text-align:left;"><span>/SIDC-IA/<span class="PreviewClass">{{IAName}}</span></span></div>
+                <div class="div-3col" style="width:30%; float:left"><span class="pull-right">Date: <span class="PreviewClass">{{IssueDate}}</span></span></div>
+                <div class="clearfix"></div>
+
+                <div class="div-5col" style="float:left">
+                    <br />
+                    <p>To,</p>
+                    <ul style="list-style-type:none;font-size:14px;">
+                        <li><span class="PreviewClass">{{AllotteeName}}</span></li>
+                        <li><span class="PreviewClass">{{Address}}</span></li>
+                    </ul>
+                </div>
+                <div class="div-7col" style="float:right">
+                    <img src="{{QRC}}" width="150" height="150">
+                </div>
+                
+                <div class="clearfix"></div>
+
+                <br />
+               <b> Sub: Acknowledgement for submission of documents for lease deed execution of plot no <span class="PreviewClass">{{PlotNo}}</span> at I.A <span class="PreviewClass">{{IAName}}</span></b>
+                <br /><br />
+                <div class="div-12col" style="width:100%; float:left">Dear Sir/Madam,</div>
+
+                <div class="div-12col" style="width:100%; float:left">
+                    <p style="text-align:justify; line-height:28px">
+                        We appreciate that you showed interest for investing in UPSIDC Industrial Area. Hereby we acknowledge the receipt of following documents in respect to your service request no {{RefNo}}
+                        dated <span class="PreviewClass">
+                            {{ApplicationDate}}
+                        </span> for plot no :- <b><span class="PreviewClass">{{PlotNo}}</span></b> in I.A. <span class="PreviewClass">{{IAName}}</span>
+                        <br />
+                        <span class="PreviewClass DocList" style="font-size:12px;">{{DocList}}</span>
+                        <br />
+
+                        We wish you all the best.
+
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-left">
+                    
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right" style="width:40%; float:right; height:20%">
+                    <ul class="list-unstyled" style="list-style-type:none; text-align:center">
+                        <li>
+                            Your's faithfully,
+                        </li>
+                        <li>For U.P. STATE INDL. DEV. CORPN. LTD.</li>
+                        <li><span class="PreviewClass">{{DAName}}</span></li>
+                        <li>(Dealing Assistant)</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="div-12col" style="border-bottom: 3px solid #ffc511; width:auto">&nbsp;</div>
+                <div class="div-12col">
+                    <ul class="list-unstyled text-center" style="list-style-type:none; text-align:center">
+                        <li>U.P. STATE INDUSTRIAL DEVELOPMENT CORPORATION Ltd.</li>
+                        <li>CIN No - U26960UP1961SGC002834, Head Office, Kanpur</li>
+                        <li>A-1/4, Lakhanpur, Kanpur-208024</li>
+                        <li>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</li>
+                        <li>Website:- www.onlineupsidc.com</li>
+                    </ul>
+
+                    <v>
+
+                </div>
+                <!--<div class="clearfix"></div>
+    <div class="div-12col" text-right>
+        <img src="{{QRC}}" width="150" height="150">
+    </div>-->
+            </div>
+                </div>
+    </div>
+

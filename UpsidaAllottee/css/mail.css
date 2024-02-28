@@ -1,0 +1,30 @@
+body{
+	margin:0 25px;
+	font-family:Segoe UI, Helvetica, Calibri !important;
+	font-size: 13px !important;
+}
+
+.header-logo{
+	height: 70px;
+	margin-bottom: 6px;
+}
+.div40-right .text-right{
+	margin-top:2px;
+}
+.div60-left{
+	width:60%; 
+	float:left;
+}
+.div40-right{
+	width:40%; 
+	float:left;
+}
+.clearfix{
+	clear:both;
+}
+.text-right{
+	text-align:right;
+}
+.text-justify{
+	text-align:justify;
+}

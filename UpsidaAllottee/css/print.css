@@ -1,0 +1,29 @@
+﻿
+.mydiv-left .col-md-4 {
+    width: 50% !important;
+    float: left !important;
+}
+.mydiv-left .col-md-8 {
+    width: 50% !important;
+    float: left !important;
+}
+.mydiv-right .col-md-5 {
+    width: 50% !important;
+    float: left !important;
+}
+
+.mydiv-right .col-md-7 {
+    width: 50% !important;
+    float: left !important;
+}
+label {
+font-size:12px !important;
+}
+.allottee-project-details .col-md-3 {
+    width: 36% !important;
+    float: left !important;
+}
+.allottee-project-details .col-md-9 {
+    width: 64% !important;
+    float: left !important;
+}

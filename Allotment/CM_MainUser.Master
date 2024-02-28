@@ -1,0 +1,229 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CM_MainUser.Master.cs" Inherits="Allotment.CM_MainUser" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+   <link href="/css/theme.css" rel="stylesheet" />
+    <link href="/css/Wizard.css" rel="stylesheet" />
+    <link href="/css/Main.css" rel="stylesheet" />
+    
+     <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <script src="/js/jquery.knob.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $(".knob").knob();
+            });
+    </script>
+    <script src="/js/jquery1.js"></script>
+<script src="js/jquery-ui.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class=" theme-blue">
+    <script type="text/javascript">
+        $(function () {
+            var match = document.cookie.match(new RegExp('color=([^;]+)'));
+            if (match) var color = match[1];
+            if (color) {
+                $('body').removeClass(function (index, css) {
+                    return (css.match(/\btheme-\S+/g) || []).join(' ')
+                })
+                $('body').addClass('theme-' + color);
+            }
+
+            $('[data-popover="true"]').popover({ html: true });
+
+        });
+    </script>
+    <style type="text/css">
+        .fgh{position:fixed;z-index:999;height:100%;width:100%;top:0}.hgf{z-index:1000;margin:300px auto;padding:10px;width:130px;background-color:White;border-radius:10px;filter:alpha(opacity=100);opacity:1;-moz-opacity:1}
+        #line-chart
+        {
+            height: 300px;
+            width: 800px;
+            margin: 0px auto;
+            margin-top: 1em;
+        }
+
+        .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover
+        {
+            color:rgb(45,45,45);
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            var uls = $('.sidebar-nav > ul > *').clone();
+            uls.addClass('visible-xs');
+            $('#main-menu').append(uls.clone());
+        });
+    </script>
+    <form id="form1" runat="server">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="" href="index.html"><span class="navbar-brand"><img src="/images/BAS-logo.png" class="bas-logo-img"></a>
+            </div>
+            <div class="navbar-collapse collapse" style="height: 1px;">
+
+
+
+
+                <ul id="main-menu" class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span style="position: relative; top: 3px;"><b>Welcome </b>
+                                <asp:Label ID="lblname" runat="server"></asp:Label></span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                           <%-- <li><a href="./">My Account</a></li>--%>
+                            <li class="divider"></li>
+                          <li><a href="CM_ChangePassword.aspx">Change Password</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="/IDADashboard.aspx?logout=true">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+        
+              <asp:Label runat="server" ID="lblempname"></asp:Label>
+        <div class="sidebar-nav">
+            <ul>
+          <%--      <li>
+                    <div class="nav-header ">
+                          <img src="images/avatar5.png" class="img-circle" alt="User Image" width="50px" height="50px">
+                           
+                        <div class="pull-left info">
+                             <p> <span >
+                          
+                                 <asp:Label runat="server" ID="lblempcode"></asp:Label><br />
+                                 <asp:Label runat="server" ID="lblQualification"></asp:Label><br />
+                                 <asp:Label runat="server" ID="lbldesignation"></asp:Label><br />
+                                 <asp:Label runat="server" ID="lblGrade"></asp:Label><br />
+                                 <asp:Label runat="server" ID="lblemail"></asp:Label><br />
+                                 <asp:Label runat="server" ID="lblPhone"></asp:Label>
+                                 </span></p>
+                        </div>
+                    </div>
+                </li>  --%>
+
+
+
+                 <li id="DashboardI" runat="server"><a href="/CM_Dashboard.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Dashboard</b></a></li> 
+                <li id="Li16"  runat="server"><a href="/CM_VacantPlotsDetail.aspx" class="nav-header"><i class="fa fa-fw fa-comment"></i><b>Unallotted Plots Details</b></a></li>
+                <li id="Li17"  runat="server"><a href="/CM_ProductionDetails.aspx" class="nav-header"><i class="fa fa-fw fa-comment"></i><b>Plot where production not started</b></a></li>
+                <li id="Li18"  runat="server"><a href="/CM_ProductionSickDetails.aspx" class="nav-header"><i class="fa fa-fw fa-comment"></i><b>Sick Unit Details</b></a></li>
+                <li id="Li1"  runat="server"><a href="/CM_New_UpcomingIndustrialArea.aspx" class="nav-header"><i class="fa fa-fw fa-comment"></i><b>Upcoming Scheme</b></a></li>
+                
+                <li id="Li2"  runat="server"><a href="/CM_AddIndustrialArea.aspx" class="nav-header"><i class="fa fa-fw fa-comment"></i><b>Industrial Area/Sector Master</b></a></li>
+                
+            
+
+            </ul>
+        </div>
+
+
+        <div class="content">
+            <hr class="hr-main-menu"/>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+ 
+    <script type="text/javascript">
+        $("[rel=tooltip]").tooltip();
+        $(function () {
+            $('.demo-cancel-click').click(function () { return false; });
+        });
+    </script>
+    
+ <script language="javascript" type="text/javascript">
+        $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy",yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        });;
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        prm.add_endRequest(function () {
+            $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy",yearRange: "1960:+10" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            });;
+        });
+  </script>
+
+
+
+
+
+
+    <style>
+        .act .currentPage
+        {
+            border-left: 4px solid #8989a6;
+    overflow: hidden;
+    background: #d2d2dd;
+        }
+
+    </style>
+
+
+    <script type="text/javascript">
+
+
+             $(function () {
+                 var url = window.location.pathname,
+                     urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
+
+              //   alert(urlRegExp);
+
+                 $('.sidebar-nav  ul li a').each(function () {
+                     if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                      //   alert(this.href.replace(/\/$/, ''));
+                         $(this).addClass('act currentPage');
+                         $(this).parent().parent(".garima").css('display', 'block');
+                         $(this).parent().parent(".garima").removeClass("collapse").addClass("collapse in").css('font-weight', 'bold');
+                         $(this).parent().parent(".garima").prev("h3").css('color', 'green');
+                         $('#content').css("min-height", $('#sideLeft').height());
+                     }
+                 });
+
+
+                 $('.sidebar-nav ul li ul li a').each(function () {
+                     if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                    //     alert(this.href.replace(/\/$/, ''));
+                         $(this).parent().addClass('act currentPage');
+                         $(this).parent().parent("ul").removeClass("collapse").addClass("collapse in");
+                         $(this).addClass('act currentPage');
+                      //   $(this).parent().parent(".garima").css('display', 'block');
+                      //   $(this).parent().parent(".garima").prev("h3").find("span").removeClass("indicatorHide").addClass("indicatorShow").css('font-weight', 'bold');
+                      //   $(this).parent().parent(".garima").prev("h3").css('color', 'green');
+                      //   $('#content').css("min-height", $('#sideLeft').height());
+                     }
+                 });
+
+
+
+             });
+
+
+
+</script>
+
+</body>
+</html>

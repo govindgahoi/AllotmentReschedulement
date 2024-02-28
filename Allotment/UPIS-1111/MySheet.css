@@ -1,0 +1,54 @@
+﻿.headlines {
+    border-bottom: solid 3px #ffc412;
+    line-height: 1.1;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    
+}
+.txtaln {
+    text-align:center;
+}
+.headlines1 {
+    line-height: 1.1;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top:-11px;
+}
+hr.myformhr{
+	    margin-top: 20px;
+    margin-bottom: 3px;
+    border: 0;
+    border-top: 2px solid #d6d6d6;
+}
+.mag_tops {
+    margin-top:20px;
+}
+
+.maiheadings {
+    background-color:#38a7bb;
+}
+.headsings {
+    margin-bottom: 10px !important;
+    margin-top: 10px;
+    display: inline-block;
+    border-bottom: solid 3px #ffc412;
+    line-height: 1.1;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.subsendbtn {
+    float:right;
+}
+.confirmationtxt {
+    font-size:12px;
+    margin-left:14px;
+
+}
+

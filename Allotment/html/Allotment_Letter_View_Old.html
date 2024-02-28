@@ -1,0 +1,369 @@
+﻿
+    <div id="Allotment_Letter" style="background:#fff; font-family: Segoe UI, Helvetica, Calibri;padding:0 10px;">
+        <div class="div-report" runat="server">
+            <div class="row">
+                <div class="div-4col pull-left" style="width: 33%; float: left; text-align: center">
+                    <img src="http://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none; height: 56px; margin-bottom: 0;" />
+                </div>
+                <div class="div-4col" style="width: 33%; float: left; text-align:center; padding-top:20px">
+                    <b>Website: www.onlineupsidc.com</b>
+                </div>
+                <div class="div-4col text-leftt" style="width: 33%; float: left; text-align:center; padding-top:20px">
+                    <b>Registered A/D</b>
+                </div>
+                <br/>
+                <br/>
+
+                <div style="width:100%; float:left; text-align:center;padding-top:10px">
+                    <b style="font-size:28px">U.P. state Industrial Development Corporation Ltd.</b>
+                </div>
+                <br />
+                <br/>
+                <div style="width:100%; float:left; text-align:center">
+                    <b style="font-size:17px">(HEAD OFFICE : A-1/4 LAKHANPUR, POST BOX NO. 1050, KANPUR 208024)</b>
+                </div>
+                <div class="clearfix"></div>
+                
+                <div style="border-bottom: 3px solid #ffc511; width:100%">&nbsp;</div>
+                <br />
+                <div style="width:100%; float:left; text-align:left">
+                    <b>Regional Office: <span class="myultext"><span class="PreviewClass">{{RegionalOffice}}</span></span></b>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="div-4col" style="width:40%; float:left;">
+                    <b>Ref.No:   <span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span></b>
+                </div>
+                <div class="div-4col" style="width:25%; float:left; text-align:left">
+                    <b>SIDC-IA:   <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></b>
+                </div>
+                <div class="div-4col" style="width:15%; float:left; text-align:left">
+                    <b>Plot No.:   <span class="myultext"><span class="PreviewClass lblPlotNo">{{PlotNo}}</span></span></b>
+                </div>
+                <div class="div-4col" style="width:20%; float:left; text-align:left">
+                    <b>Date:   <span class="myultext"><span class="PreviewClass">{{AllotmentDate}}</span></span></b>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="div-12col" style="width:100%; float:left; text-align:left">
+                    <b>M/S /Shri /Smt. /Km.</b>
+                </div>
+                <div class="clearfix"></div>
+                
+                <div class="div-4col" style="float:left; text-align:left">
+                    <b>
+                        <ul style="list-style-type:none">
+                            <li><span class="myultext"><span class="PreviewClass">{{AllotteeName}}</span></span></li>
+                            <li><span class="myultext"><span class="PreviewClass">{{Address}}</span></span></li>
+                        </ul>
+                    </b>
+</div>
+                <div class="div-8col"></div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                    <p><b>Subject:-</b> Allotment of land in Industrial Area <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></p>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                    <b>Dear Sir,</b>
+                </div>
+                <div class="clearfix"></div>
+                
+                <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                    <p style="text-align:justify; line-height:25px">
+                        With reference to your application dated <b><span class="myultext"><span class="PreviewClass">{{ApplicationDate}}</span></span></b> for allotment of land in our Industrial Area<b>
+                       <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span>
+                        </b>at <b><span class="myultext"><span class="PreviewClass">{{RegionalOffice}}</span></span></b> we have alloted to you plot No <b><span class="myultext"><span class="PreviewClass lblPlotNo">{{PlotNo}}</span></span></b>
+                        in our Industrial Area <b><span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></b> at <b><span class="myultext"><span class="PreviewClass">{{RegionalOffice}}</span></span></b> on the conditions noted below
+                        for setting up an industrial unit to manufacture <b><span class="myultext"><span class="PreviewClass">{{Product}}</span></span></b>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                    <style>
+                        ol li {
+                            font-weight: bold
+                        }
+
+                            ol li span {
+                                font-weight: normal
+                            } 
+                    </style>
+                    <ol class="" style="float:left;padding-left:32px;">
+                        <li style="text-align:justify;line-height:25px"><span> Area of plot is <b><span class="myultext"><span class="PreviewClass lblPlotSize">{{lblPlotSize}}</span></span></b> sq. mtr. The precise measurement and the area of the plot is as per site attached herewith</span></li>
+                        <li style="text-align:justify;line-height:25px"><span> Date of this letter will be treated as the date of allotment of the above plot in your favour.</span></li>
+                        <li style="text-align:justify;line-height:25px"><span>
+    The interest chargeable as per clause 5 below on the (total) balance outstanding premium will be computed from the date of allotment as
+    defined in clause 2 above and payable half yearly on 1st day of January and 1st day of July each year. The first of such payment will be due on
+    <b><span class="myultext"><span class="PreviewClass FirstInstallmentDate">{{FirstInstallmentDate}}</span></span></b>
+</span>
+                        </li>
+                        <ul style="list-style-type:lower-alpha; padding:0px">
+                            <li style="text-align:justify;line-height:25px">
+                                <span>
+                                    Are constructions of value of Rs <b><span class="myultext"><span class="PreviewClass ExistingConstructionValue">{{ExistingConstructionValue}}</span></span></b> existing on the plot, cost of which shall have to be paid by you along with reservation
+                                    money as mentioned in clause 4 below.
+                                </span>
+                            </li>
+                        </ul>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                Shall deposit at this office an amount of Rs <b><span class="myultext"><span class="PreviewClass ReservationAmount">{{ReservationAmount}}</span></span></b> (Earnest Money of Rs <b><span class="myultext"><span class="PreviewClass EMDAmount">{{EMDAmount}}</span></span></b>
+                                has been adjusted) towards reservation money in respect of the above plot latest by <b><span class="myultext"><span class="PreviewClass EmdAmountDate">{{EmdAmountDate}}</span></span></b> . This amount
+                                (togather with Earnest money) is approximately equal to <b><span class="myultext"><span class="PreviewClass TotalReservationMoneyPer">{{TotalReservationMoneyPer}}</span></span></b> percent of the total premium of the plot at
+                                provisional rate of Rs <b><span class="myultext"><span class="PreviewClass lblPlotRate">{{lblPlotRate}}</span></span></b> per sq. mtr. and locational charges @ Rs <b><span class="myultext"><span class="PreviewClass LocationChargeRate">{{LocationChargeRate}}</span></span></b> per sq. mtr.
+                                for first five acres and is subject to adjustment according to actual measurement of the plot. If the above amount falls short of the amount equal to
+                                <b><span class="myultext"><span class="PreviewClass ChargePer">{{ChargePer}}</span></span></b> percent of the total premium according to actual measurement, the balance will be deposited by you within seven days
+                                of the receipt of the demand from us. If the payments are not made as stipulated above this allotment will stand automatically cancelled/and the
+                                whole amount of Earnest Money deposited by you will stand forfeited to this Corporation, even if the area of the plot either exceeds or is less
+                                than the area applied for to the extent of 20% or less of the area applied for. However, if the area of land alloted either exceeds the area
+                                applied for or falls short of the area applied for by an area more than 20% of it, the Earnest Money will not be forfeited if this allotment is
+                                not accepted, provided an intimation is sent to us in this respect by date stipulated above.<br />
+                                <b>Note: - </b>The premium mentioned herein is provisional and is liable to be enhanced in accordance with the provisions of Licence Agreement/Lease Dead.
+                            </span>
+                        </li>
+                        <li style="text-align:justify; line-height:25px">
+                         <span>
+                            The remaining <b><span class="myultext"><span class="PreviewClass RemPremiumPer">{{RemPremiumPer}}</span></span></b>% of the provisional premium shall have to be paid by you in <b><span class="myultext"><span class="PreviewClass lblNoInstallment">{{lblNoInstallment}}</span></span></b> equal half yearly instalments each of which will be due
+                            for payment on 1st ay of january and 1st day of july each year. The first instalment of such payment will fall due for payment on
+                            <b><span class="myultext"><span class="PreviewClass FirstInstallmentDate">{{FirstInstallmentDate}}</span></span></b>. The second and subsequent instalments of premium will fall due on 1st day of January
+                            and 1st day of July each year.<br />
+                            An interest @ <b><span class="myultext"><span class="PreviewClass lblInterestPerAnnum">{{lblInterestPerAnnum}}</span></span></b>% per annum shall be charged on the outstanding (balance) premium with effect from the date of allotment and will be payable
+                            alongwith instalment of premium asstipulated in clause 3 above subject to a rebate of <b><span class="myultext"><span class="PreviewClass lblRebatePer">{{lblRebatePer}}</span></span></b>% per annum on payment on or before the Drescribed.
+                            date and if there are no arrears of dues. The amount of the balance premium and the interest due on it from time to time shall remain first change on the land
+                            and the building and machinery erected thereon till it is (they are) paid in full.<br />
+                            <b>Note: -</b>The premium mentioned herein is provisional and is liable to be enhanced in accordance with the provisions of Licence Agreement/ Lease Deed.
+                        </span>
+                            </li>
+                        <li style="text-align:justify; line-height:25px"><span>The stamp duty, the registration charges and legal expenses involved in the execution of the Lease Deed and other agreements from time to time will to be borne by you.</span></li>
+                        <li style="text-align:justify; line-height:25px"><span>In the event of cancellation of allotment on account of any default on your part, the following will stand forfeited to the U.P. State Industrial Development Corporation Ltd.</span></li>
+                        <ul style="list-style-type:lower-alpha; padding:0px">
+                            <li style="text-align:justify; line-height:25px">
+                                <span>
+                                    Interest @ <b><span class="myultext"><span class="PreviewClass lblInterestPerAnnum">{{lblInterestPerAnnum}}</span></span></b> % per annum from the date of allotment on the total unpaid premium from time to time till the date of cancellation of allotment without
+                                    allowing rebate in interest, mentioned in clause 5 above irrespective of the fact whether the dues had been paid in time or not.
+                                </span>
+                            </li>
+                            <div class="div-12col" style="text-align: center; font-weight: 700">AND</div>
+                            <li style="text-align:justify; line-height:25px"><span>Use and Occupation charges/ Lease Rent from the date of allotment upto the date of cancellation.</span></li>
+                            <div class="div-12col" style="text-align: center; font-weight: 700">AND</div>
+                            <li style="text-align:justify; line-height:25px">
+                                <span>
+                                    In the case of constructed sheds allotted by UPSIDC Ltd. <b><span class="myultext"><span class="PreviewClass Depreciation">{{Depreciation}}</span></span></b> % of the cost of shed towards depreciation. The Balance amount, if any, out of the deposits made by you
+                                    till then, after deducting the amounts to be forfeited as above, will be refundable. In case the total of the amounts paid is less than the amounts to be
+                                    forfeited you shall be liable to pay the difference and the same shall be recoverable by the Corporation from you
+                                </span>
+                            </li>
+                        </ul>
+                        <li style="text-align:justify; line-height:25px"><span>In the event of surrender of the allotment the following amounts will stand forfeited to the U.P. State Industrial Developement Corporation Ltd.</span></li>
+                                 <ul style="list-style-type:lower-alpha; padding:0px">
+                                    <li style="text-align:justify; line-height:25px">
+                                       <span> Interest @ <b><span class="myultext"><span class="PreviewClass lblInterestPerAnnum">{{lblInterestPerAnnum}}</span></span></b> % per annum from the date of allotment upto the date of surrender of the allotment on the total balance (unpaid), premium from
+                                        time to time allowing the rebate (in interest) irrespective of the fact whether the payments were made in time or not.</span>
+                                    </li>
+                                    <div class="div-12col" style="text-align: center; font-weight: 700">AND</div>
+                                    <li style="text-align:justify; line-height:25px"><span>Use and Occupation charges/ Lease Rent from the date of allotment till the date of surrender.</span></li>
+                                    <div class="div-12col" style="text-align: center; font-weight: 700">AND</div>
+                                    <li style="text-align:justify; line-height:25px">
+                                        <span>
+                                            <b><span class="myultext"><span class="PreviewClass Depreciation">{{Depreciation}}</span></span></b> % Of the cost of shed towards depreciation in case of constructed sheds allotted by UPSIDC.<br />
+                                            The Balance amount, if any, out of the deposits made by you till the date of surrender after deducting the amounts to be forfeited as above, will be refundable.
+                                            In case the total of the amounts paid is less than the amount to be forfeited, you shall be liable to pay the difference and the same shall be recoverable by the
+                                            corporation from you.
+                                        </span>
+                                    </li>
+                                </ul>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                The plot has been alloted on as it is where itis basis and levelling etc. if any, is to be undertaken by you at your expenses. You will pay to the U.P. State Industrial
+                                Development Corporation Ltd. within 30 days from the date of the demands made by this Corporation from time to time such recurring fee in the nature of service and/or
+                                maintenance charges as determined by this Corporation. In case of default you will be liable to pay interest @ <b><span class="myultext"><span class="PreviewClass lblInterestPerAnnum">{{lblInterestPerAnnum}}</span></span></b> % p.a. on the amount due.
+                            </span>
+                        </li>
+                        <li style="text-align:justify;list-style-type:none; line-height:25px">
+                            
+                            <style>
+                                ol.ul-10a {
+                                    list-style-type: none;
+                                    counter-reset: elementcounter;
+                                    padding-left: 0;
+                                }
+
+                                    ol.ul-10a li:nth-child(1):before {
+                                        content: "10a.";
+                                        counter-increment: elementcounter;
+                                        position: absolute;
+                                        left: -31px;
+                                    }
+                                
+                            </style>
+                            <ol style="list-style-type:lower-alpha; padding:0px" class="ul-10a">
+                                <li style="text-align:justify; line-height:25px;list-style-type:none;position:relative;">
+                                    <span>
+                                        You will obey and submit to the rules of Muncipal or other authority now existing or hereafter to exist so far as the same relate to the ammovable property in
+                                        the Industrial Area or so far as they affect the health, safety and convenience of the others inhabitants of the place, and will not release any obnoxious gaseous, liquid
+                                        or solid effluents from the unit in any case.
+                                    </span>
+                                </li>
+                                <li style="text-align:justify; line-height:25px">
+                                    <span>
+                                        You will establish at your own cost an appropriate and efficient effluent treatment system/ plant and will ensure that it is ready and functional as per the norms and
+                                        specifications expected laid down or stipulated by the State Effluent Board/U.P. Pollution Control Board and any other authority established by law for the
+                                        time being in force before the production is commenced in the unit set up on the plot of land covered by  this letter
+                                    </span>
+                                </li>
+                                <li style="text-align:justify; line-height:25px">
+                                    <span>
+                                        Whenever Muncipal Corporation or Board, Cantonment Board, Zila Parishad, Town Area or (any) other local bodies (body) take over this Industrial Area of UPSIDC,
+                                        you will become liable to pay and discharge all rates, taxes, charges, claims andoutgoing chargeable imposed and assessment of every description, which may be
+                                        assessed, charged or imposed upon then by the local body and will abide by the laws rules and direction of the local body.
+                                    </span>
+                                </li>
+                                <li style="text-align:justify; line-height:25px"><span>In case boiler is to be installed and coal is to be used, you will obtain clearance from the authorities concerned.</span></li>
+                                <li style="text-align:justify; line-height:25px"><span>You will make appropriate arrangements at your own cost for proper disposal of waste water produced in your unit</span></li>
+                               
+                            </ol>
+                        </li>
+                        <li style="text-align:justify; line-height:25px"><span>You will apply for and obtain power connection from the local agency /U.P. State Electricity Board as the case may be at your end and cost.</span></li>
+                        <li style="text-align:justify; line-height:25px"><span>Before execution of licence agreement you shall have to:-</span></li>
+                            <ul style="list-style-type:lower-alpha; padding:0px">
+                                <li style="text-align:justify; line-height:25px"><span>Submit valid S. S. I. registraion certificate issued by District Industries Centre for the item of manufacturing for which this allotment is made.</span></li>
+                                <li style="text-align:justify; line-height:25px"><span>Clear all dues upto the date of executing Licence Agreement as mentioned in clause -3, 4 and 5 of this letter.</span></li>
+                                <li style="text-align:justify; line-height:25px"><span>Any other formalties required, if any.</span></li>
+                            </ul>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                You will have to take over possession of the land executing the Licence Agreement within 30 days from the date of inviting you to do so or within 3 months
+                                from the date of this letter whichever is earlier.
+                            </span>
+                        </li>
+                        <li style="text-align:justify; line-height:25px"><span>The Lease Deed for the plot will be executed only when.</span></li>
+                            <ul style="list-style-type:lower-alpha; padding:0px">
+                                <li style="text-align:justify; line-height:25px"><span>The factory has been established and commercial production has been commenced to the satisfaction of this corporation</span></li>
+                                <div class="div-12col" style="text-align: center; font-weight: 700">OR</div>
+                                <li style="text-align:justify; line-height:25px">
+                                    <span>
+                                        The loan has been sanctioned for the project for which this allotment is being made by the financial institution (requiring creation of mortgage)
+                                        and the same has assured, in writing, UPSIDC Ltd. for making the lumpsum payment of total balance premium of land out of the first disbursement of
+                                        the sanctioned loan on behalf of the allottee. In the event, we may be able to allow first charge to such institution and transfer to it the original
+                                        Lease Deed in exchange for registered duplicate copy thereof,
+                                    </span>
+                                </li>
+                            </ul>
+                        <li style="text-align:justify; line-height:25px"><span>The allotment will be cancelled if and when there happens any one of the events mentioned below and the same consequences will follow as stated in clause 7 above.</span></li>
+                            <ul style="list-style-type:lower-alpha; padding:0px">
+                            <li style="text-align:justify; line-height:25px">
+                                <span>
+                                    If you fail to execute Licence Agreement/ Lease Deed and/ or take possession of the land as mentioned in
+                                    clause nos. 11 and 13 within the time stipulated in clause 13. the time being of essence.
+                                </span>
+                            </li>
+                            <div class="div-12col" style="text-align: center; font-weight: 700">OR</div>
+                            <li style="text-align:justify; line-height:25px"><span>If you fail to make payment of interest and/ or premium on or before the due date(s) as mentioned in clause 5 of this letter</span></li>
+                        </ul>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                You shall not employ in the unit any process generating smoke or fumes or involving use of chimney and any use of fossil fuel in the process
+                                which may cause atmospheric pollution and / or would not discharge liquid effluent which may be obnoxious by nature or cause pollution. Your
+                                unit should not involve any significant emission of particles and / or gaseous substance in the air.
+                            </span>
+                        </li>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                In employing labour for the industry, skilled, semi skilled or unskilled, shall give preference to one or two ablebodied persons from the
+                                familes whose land has been acquired for the purpose of the said Industrial Area.
+                            </span>
+                        </li>
+                        <li style="text-align:justify; line-height:25px"><span>You shall also be liable to pay maintenance/ service charges in addition to other dues as per the demand made by the Corporation.</span></li>
+                        <li style="text-align:justify; line-height:25px"><span>The balance premium alongwith stipulated interest will constitute the first charge on the allotted plot till fully paid.</span></li>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                You will pay use and occupation charges/ lease rent at the rate of Rs. <b><span class="myultext"><span class="PreviewClass LeaseRent1">{{LeaseRent1}}</span></span></b>/- per hectare per year during the first thirty years,
+                                Rs.<b><span class="myultext"><span class="PreviewClass LeaseRent2">{{LeaseRent2}}</span></span></b>/- per hectare per year during the next thirty years after expiry of the first thirty years and Rs. <b><span class="myultext"><span class="PreviewClass LeaseRent3">{{LeaseRent3}}</span></span></b>/- per hectare per
+                                year during the next thirty years after expiry of the first sixty years. Use and occupation charges are payable till the date lease
+                                is granted to you whereafter lease rent will have to be paid.
+                            </span>
+                        </li>
+                        <li style="text-align:justify; line-height:25px"><span>The allottee / licencee/ lessee will mention in the postal address of his correspondence letters invariable the name of UPSIDC Industrial Area.</span></li>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                All the payments to the Corporation should be either online or through Bank Draft / pay order in favour of UPSIDC Ltd. payable at
+                                <b><span class="myultext"><span class="PreviewClass">{{RegionalOffice}}</span></span></b> No payments in cash or through cheques would be accepted.
+                            </span>
+                        </li>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                You will utilise minimum <b><span class="myultext"><span class="PreviewClass CoveredArea">{{CoveredArea}}</span></span></b>% area of the plot by covering it by roof/ permanent shed within the specified period as contained in the
+                                Licence Agreement/ Lease Deed, failing which the allotment of the plots(s) will be cancelled.
+                            </span>
+                        </li>
+                        <li style="text-align:justify; line-height:25px">
+                            <span>
+                                It will be your sole responsibility to get NOC from UPPCB (U.P. Pollution Control Board) and if it is not furnished to this Corporation,
+                                you will be liable for action according to law and UPSIDC would not be responsible for any of your act or omissions which may be in
+                                contravention to the U. P. Pollution Control Board rules environmental laws.
+                            </span>
+                        </li>
+                </ol>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="div-12col text-right" style="width:100%; float:left; padding-bottom:5%">
+                    <ul class="list-unstyled" style="list-style-type:none; text-align:right">
+                        <li>
+                            <b style="margin-right: 60px;">Your's Faithfully,</b>
+                        </li>
+                        <li><b>For U.P. STATE INDL. DEV. CORPN. LTD.</b></li>
+                        <br />
+                        <li><b style="margin-right: 40px;"><span class="myultext"><span class="PreviewClass">{{RMName}}</span></span></b></li>
+                      
+                        <li><b style="margin-right: 40px;">(Regional Manager)</b></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+
+                <div class="div-4col" style="width:35%; float:left;">
+                    <b>No:   <span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span></b>
+                </div>
+                <div class="div-4col" style="width:25%; float:left; text-align:left">
+                    <b>SIDC-IA:   <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></b>
+                </div>
+                <div class="div-4col" style="width:20%; float:left; text-align:left">
+                    <b>Plot No.:   <span class="myultext"><span class="PreviewClass lblPlotNo">{{PlotNo}}</span></span></b>
+                </div>
+                <div class="div-4col" style="width:20%; float:left; text-align:left">
+                    <b>Date:   <span class="myultext"><span class="PreviewClass">{{AllotmentDate}}</span></span></b>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <br />
+                <div class="div-12col" style="width:100%;padding-top:2%; padding-bottom:8%">
+                    <b> Copy forwarded for information and necessary action to:-</b>
+                    <li style="list-style-type:none; font-family:Arial">1.  General Manager, UPSIDC Limited, A-1/4, Lakhanpur, Kanpur-208024</li>
+                    <li style="list-style-type:none;font-family:Arial">2.   Chief Manager, District Industrial Centre </li>
+                    <li style="list-style-type:none;font-family:Arial">3.   Joint Director of Industries</li>
+                    <li style="list-style-type:none;font-family:Arial">4.   Executive Engineer, UPSIDC Limited </li>
+                    <li style="list-style-type:none;font-family:Arial">5.   Regional Manager, U.P. Financial Corporation </li>
+
+                </div>
+
+                <div class="div-12col" style="border-bottom: 3px solid #ffc511; width:auto">&nbsp;</div>
+                <div class="div-12col">
+                    <ul class="list-unstyled text-center" style="list-style-type:none; text-align:center">
+                        <li><b> U.P. STATE INDUSTRIAL DEVELOPMENT CORPORATION Ltd.</b></li>
+                        <li><b>CIN No - U26960UP1961SGC002834, Head Office, Kanpur</b></li>
+                        <li><b>A-1/4, Lakhanpur, Kanpur-208024</b></li>
+                        <li><b>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</b></li>
+                        <li><b>Website:- www.onlineupsidc.com</b></li>
+                    </ul>
+
+                </div>
+               
+            </div> 
+        </div>
+    </div>
+

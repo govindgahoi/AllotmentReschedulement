@@ -1,0 +1,9 @@
+﻿<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="http://eServices.onlineupsidc.com/" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\gopal\.singh\\Desktop\\16-09-2017\\16-09-2017\\Allottee\ Project\\Allotment\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\gopal\.singh\\Desktop\\16-09-2017\\16-09-2017\\Allottee\ Project\\Allotment\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="conStr-Web.config Connection String" defaultValue="Data Source=IN2233730W0;Initial Catalog=BookDb;Integrated Security=True">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\gopal\.singh\\Desktop\\16-09-2017\\16-09-2017\\Allottee\ Project\\Allotment\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='conStr']/@connectionString" />
+  </parameter>
+</parameters>

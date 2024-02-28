@@ -1,0 +1,771 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* @import url('css/font-awesome.min.css');*/
+
+/* In html file */
+/*<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta name="viewport" content="width=device-width">*/
+
+/**
+ * 8.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+@media (max-width: 1599px) {}
+
+@media (max-width: 1069px) {}
+
+@media (max-width: 999px) {}
+
+/* Collapse oversized image and pulled images after iPad breakpoint. */
+@media (max-width: 767px) {
+    .all-sector li {
+        width: 100%;
+    }
+ .in-banner {
+     margin-top: 62px
+ }
+    .navbar-brand {
+        display: inline-block;
+        width: 85%;
+    }
+
+    .navbar-brand img {
+        float: right;
+        width: 43%;
+    }
+
+    .contentarea {
+        background-color: #fbfbfb;
+        padding: 11px;
+    }
+
+    .service {
+        margin-bottom: 186px;
+    }
+
+    .news-sec:before {
+        left: 81px;
+        top: -10px;
+    }
+
+    .news-sec:after {
+        right: 84px;
+        bottom: -10px;
+    }
+
+    .flip-box-front p {
+        font-size: 26px;
+    }
+
+    .linkstitle1 {
+        margin-bottom: 128px;
+    }
+
+    section.aboutUs p {
+        font-size: 26px;
+        text-align: justify;
+    }
+
+    .logo {
+        background-image: url("../images/logo-2.jpg");
+        display: none;
+    }
+
+    .impo-information li {
+
+
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .b-lead h4 {
+        display: none;
+    }
+
+    .b-lead p {
+        display: none;
+    }
+
+    .b-lead {
+        padding: 6px;
+        width: 160px;
+        height: 162px;
+    }
+
+    .tbox {
+        text-align: center;
+    }
+
+    .tbox span {
+        text-align: center;
+    }
+
+    .b-lead-r {
+        top: 25%;
+        left: 6%;
+    }
+
+    .feat_section .feature_box {
+        width: 100%;
+    }
+
+    section.social-media-sec .col-lg-4 {
+        margin-bottom: 36px !IMPORTANT;
+    }
+
+    .tbox {
+        margin: 20px 0px;
+    }
+
+    #myVideo {
+        height: 247px;
+    }
+
+    a.govt-logoarea h5 {
+        font-size: 26px;
+    }
+
+    footer a {
+        font-size: 26px;
+        color: #ffffff;
+    }
+
+    h4.f-title {
+        font-size: 30px;
+    }
+
+    .feat_section .panel-default {
+        margin: 20px auto;
+    }
+
+    .investorguide-btm img {
+        margin-bottom: 30px;
+    }
+
+    .all-sector li a {
+        font-size: 26px;
+    }
+
+    .card-header.secondry-heading {
+        font-size: 30px;
+    }
+
+    li.news-item tr td {
+        font-size: 26px;
+        display: block;
+        padding: 17px 15px;
+    }
+}
+
+@media (max-width: 643px) {
+    .uplogo img {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .service {
+        margin-bottom: 79px;
+    }
+
+    .logo {
+        background-image: url("../images/logo-2.jpg");
+        display: none;
+    }
+
+    .social ul {
+        display: block;
+    }
+
+    .grivance-btn {
+        position: fixed;
+        top: 19%;
+        display: block;
+        z-index: 999;
+        right: -71px;
+        background-color: #ff0000;
+        color: #fff;
+        padding: 3px 10px;
+        transform: rotate(90deg);
+        font-size: 20px;
+        border: 1px solid #fff;
+    }
+
+    .impo-information li {
+
+
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .b-lead h4 {
+        display: none;
+    }
+
+    .b-lead p {
+        display: none;
+    }
+
+    .b-lead {
+        padding: 6px;
+        width: 110px;
+        height: 110px;
+    }
+
+    .b-lead-r {
+        top: 32%;
+        left: 6%;
+    }
+
+    .w-100 {
+        min-height: 253px;
+
+    }
+
+    .linkstitle1 span {
+        font-size: 32px;
+    }
+
+    .linkstitle span {
+        font-size: 32px;
+    }
+
+    .leader1 {
+
+        padding: 11px 0px;
+    }
+
+    section.aboutUs p {
+        font-size: 18px;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+
+    .tbox {
+        text-align: center;
+    }
+
+    .tbox span {
+        text-align: center;
+    }
+
+    .social-media-sec {
+        padding: 14px 0;
+    }
+
+    .linkstitle1 {
+        margin-bottom: 59px;
+    }
+
+    .projects {
+        padding: 22px 0px;
+    }
+
+    .feat_section .panel-default {
+        margin: 20px auto;
+    }
+
+    .linkstitle:before {
+        width: 16px;
+        height: 16px;
+        bottom: -8px;
+
+    }
+
+    .linkstitle1:before {
+        width: 16px;
+        height: 16px;
+        bottom: -8px;
+    }
+
+    .contentarea {
+
+        padding: 10px;
+    }
+
+    .ct-h2 {
+        padding: 20px 0px;
+    } .in-banner {
+         margin-top: 62px
+     }
+
+    .inner-heading span:after {
+        display: none;
+        border-bottom: 41px solid #f69a03;
+        border-right: 40px solid transparent;
+        right: -40px;
+        top: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uplogo img {
+        display: none;
+    }
+section.leader {
+    background: #fffdf6;
+    padding: 20px 0px;
+}
+    .navbar-brand {
+        display: inline-block;
+        width: 45%;
+    }
+.flip-box-front p {
+    font-size: 20px;
+}
+    .navbar-brand img {
+        float: right;
+        width: 100%;
+    }
+
+    .service {
+        margin-bottom: 144px;
+    }
+
+    .logo {
+        background-image: url("../images/logo-2.jpg");
+        display: none;
+    }
+
+    .social ul {
+        display: block;
+    }
+
+    .grivance-btn {
+        position: fixed;
+        top: 22%;
+        display: block;
+        z-index: 999;
+        right: -71px;
+        background-color: #ff0000;
+        color: #fff;
+        padding: 3px 10px;
+        transform: rotate(90deg);
+        font-size: 20px;
+        border: 1px solid #fff;
+    }
+
+    .impo-information li {
+
+
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .b-lead h4 {
+        display: none;
+    }
+
+    .b-lead p {
+        display: none;
+    }
+
+    .b-lead {
+        padding: 6px;
+        width: 110px;
+        height: 110px;
+    }
+
+        .b-lead-r {
+            top: 35%;
+            left: 9%;
+        }
+    .w-100 {
+        min-height: 253px;
+
+    }
+
+    .linkstitle1 span {
+        font-size: 30px;
+    }
+.social ul li i {
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    font-size: 21px;
+    background: rgb(255, 255, 255);
+    transform: rotate(0deg);
+}
+
+.social ul li {
+    display: inline-block;
+    margin: 6px;
+    background: rgb(255 255 255);
+    width: 288px;
+    text-align: right;
+    padding: 2px;
+
+    transition: all 1s ease 0s;
+}
+
+.grivance-btn {
+    position: fixed;
+    top: 23%;
+    display: block;
+    z-index: 999;
+    right: -57px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 3px 10px;
+    transform: rotate(90deg);
+    font-size: 17px;
+    border: 1px solid #fff;}
+    .linkstitle span {
+        font-size: 30px;
+    }
+.all-sector li a {
+    font-size: 18px;
+}
+.card-header.secondry-heading {
+    font-size: 26px;
+}
+li.news-item tr td {
+    font-size: 18px;
+    display: block;
+    padding: 5px 15px;
+}a.govt-logoarea h5 {
+    font-size: 18px;
+}footer a {
+    font-size: 18px;}
+                h4.f-title {
+                    font-size: 26px;
+                }
+    .leader1 {
+
+        padding: 11px 0px;
+    }
+
+    section.aboutUs p {
+        font-size: 18px;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+
+    .tbox {
+        text-align: center;
+    }
+
+    .tbox span {
+        text-align: center;
+    }
+
+    .social-media-sec {
+        padding: 14px 0;
+    }
+
+   .linkstitle1 {
+       margin-bottom: 48px;
+   }
+
+    .projects {
+        padding: 22px 0px;
+    }
+
+    .feat_section .panel-default {
+        margin: 20px auto;
+    }
+
+    .linkstitle:before {
+        width: 16px;
+        height: 16px;
+        bottom: -8px;
+
+    }
+
+    .linkstitle1:before {
+        width: 16px;
+        height: 16px;
+        bottom: -8px;
+    }
+
+    .contentarea {
+
+        padding: 10px;
+    }
+ .in-banner {
+     margin-top: 62px
+ }
+    .ct-h2 {
+        padding: 20px 0px;
+    }
+
+    .inner-heading span:after {
+        display: none;
+        border-bottom: 41px solid #f69a03;
+        border-right: 40px solid transparent;
+        right: -40px;
+        top: 0px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 320px) {
+    .uplogo img {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .service {
+        margin-bottom: 79px;
+    }
+
+    .logo {
+        background-image: url("../images/logo-2.jpg");
+        display: none;
+    }
+
+    .social ul {
+        display: block;
+    }
+
+    .social ul li i {
+        margin-left: 10px;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        border-radius: 100%;
+        width: 35px;
+        height: 35px;
+        font-size: 21px;
+        background: rgb(255, 255, 255);
+        transform: rotate(0deg);
+    }
+
+    .social ul li {
+        display: inline-block;
+        margin: 6px;
+        background: rgb(255 255 255);
+        width: 288px;
+        text-align: right;
+        padding: 2px;
+
+        transition: all 1s ease 0s;
+    }
+
+    .grivance-btn {
+        position: fixed;
+        top: 27%;
+        display: block;
+        z-index: 999;
+        right: -71px;
+        background-color: #ff0000;
+        color: #fff;
+        padding: 3px 10px;
+        transform: rotate(90deg);
+        font-size: 20px;
+        border: 1px solid #fff;
+    }
+
+    .flip-box-front p {
+        font-size: 15px;
+    }
+
+    .impo-information li {
+
+
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .b-lead h4 {
+        display: none;
+    }
+
+    .b-lead p {
+        display: none;
+    }
+
+    .b-lead {
+        padding: 6px;
+        width: 110px;
+        height: 110px;
+    }
+
+        .b-lead-r {
+            top: 32%;
+            left: 14%;
+        }
+
+    .w-100 {
+        min-height: 253px;
+
+    }
+
+    .linkstitle1 span {
+        font-size: 32px;
+    }
+
+    .linkstitle span {
+        font-size: 32px;
+    }
+
+    .leader1 {
+
+        padding: 11px 0px;
+    }
+
+    section.aboutUs p {
+        font-size: 15px;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+
+    .tbox {
+        text-align: center;
+    }
+
+    .tbox span {
+        text-align: center;
+    }
+
+    .social-media-sec {
+        padding: 14px 0;
+    }
+
+    .linkstitle1 {
+        margin-bottom: 59px;
+    }
+
+    .projects {
+        padding: 22px 0px;
+    }
+
+    .feat_section .panel-default {
+        margin: 20px auto;
+    }
+
+    .linkstitle:before {
+        width: 16px;
+        height: 16px;
+        bottom: -8px;
+
+    }
+
+    .linkstitle1:before {
+        width: 16px;
+        height: 16px;
+        bottom: -8px;
+    }
+
+    .contentarea {
+
+        padding: 10px;
+    }
+
+    .tbox a {
+        font-size: 20px;
+    }
+
+    section.leader {
+        background: #fffdf6;
+        padding: 20px 0px;
+    }
+
+    li.news-item tr td {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+a.govt-logoarea h5 {
+    font-size: 15px;
+}footer a {
+    font-size: 15px;}
+    .card-header.secondry-heading {
+        font-size: 22px;
+    }
+
+    .figure {
+        background: #ffffff;
+        padding: 20px 0;
+    }
+
+    .impo-information li a {
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+
+    .ct-h2 {
+        padding: 20px 0px;
+    }
+
+    .inner-heading span:after {
+        display: none;
+        border-bottom: 41px solid #f69a03;
+        border-right: 40px solid transparent;
+        right: -40px;
+        top: 0px;
+    }
+
+    .announcement h3 {
+        font-size: 22px;
+        background: #f69a03;
+        padding: 7px 14px;
+    }
+        .in-banner {
+            margin-top: 62px}
+}
+
+/**
+ * 9.0 Print
+ * ----------------------------------------------------------------------------
+ */
+
+/* Retina-specific styles. */
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
+
+@media print {}

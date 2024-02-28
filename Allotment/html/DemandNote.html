@@ -1,0 +1,144 @@
+﻿
+<div id="Buildingletter" style="padding: 10px 10px; margin: 5px 5px; font-family: Segoe UI, Helvetica, Calibri; background:#fff;">
+<style>
+    .clearfix {
+        clear:both;
+    }
+    .div-4col {
+        width:33%
+    }
+     .div-7col {
+        width:60%
+    }
+      .div-3col {
+        width:30%
+    }
+    .pull-right {
+        float:right;
+    }
+
+    .list-unstyled {
+        list-style-type: none;
+    }
+
+    .div-report .hide_me {
+        display: none;
+    }
+
+</style>
+
+
+<div class="div-report" runat="server">
+    <div class="row">
+        <div class="div-4col" style="float:left">
+            <b style="font-weight:700; font-size:18px">U.P. State Industrial  Development Corporation Ltd.</b>
+        </div>
+        <div class="div-4col" style="float: left; text-align:center">
+            <img src="https://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none;height: 73px;margin-bottom: 0;margin-top: 30px;" />
+        </div>
+        <div class="div-4col text-left" style="float: left;font-size:13px;">
+            <ul class="list-unstyled header-ul pull-right">
+                <li><b><span>{{RegionalOffice}}</span></b></li>
+                <li><b><span>{{OfficeAddress1}}</span></b></li>
+                <li><b><span>{{OfficeAddress2}}</span></b></li>
+                <li><b>Tel No. : <span>{{TelNo}}</span></b></li>
+                <li><b>Email ID: <span>{{EmailId}}</span></b></li>
+                <li><b>Website: www.onlineupsidc.com</b></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div style="border-bottom: 3px solid #ffc511;"></div>
+        <div class="clearfix"></div>
+        <h2 style="text-align:center;">Demand Notice</h2>
+    </div>
+    <br />
+    <div class="row">
+        <div class="clearfix"></div>
+        <div class="col-md-7">
+            <table>
+                <tr><td style="width:11%">Date </td><td style="width:1%">:</td><td style="width:38%">{{Date}}</td></tr>
+                <tr><td style="width:11%">Ref. No  </td><td style="width:1%">:</td><td style="width:38%">{{RefNo}}</td></tr>
+                <tr><td style="width:11%">Allottee ID  </td><td style="width:1%">:</td><td style="width:38%">{{AllotteeID}}</td></tr>
+                <tr><td style="width:11%">Name Of Allottee</td><td style="width:1%">:</td><td colspan="4" style="width:88%">{{AllotteeName}}</td></tr>
+                <tr><td style="width:11%">Address Of Allottee</td><td style="width:1%">:</td><td colspan="4" style="width:88%">{{Address}}</td></tr>
+                <tr><td style="width:11%">Plot No </td><td style="width:1%">:</td><td colspan="4" style="width:88%">{{PlotNo}}</td></tr>
+            </table>
+        </div>
+
+        <div class="col-md-5" style="float:right;margin-top:-155px;">
+            <img src="{{QRC}}" width="150" height="150">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <br />
+    <b>
+        Sub: Demand of Premium Interest &amp; Other Dues against Plot No. {{PlotNo}} INDL. Allotted to you in Industrial Area {{IAName}}
+    </b>
+    <br /><br />
+    <div class="div-12col" style="width:100%; float:left">Dear Sir/Madam,</div>
+
+    <div class="div-12col" style="width:100%; float:left">
+        <p style="text-align:justify; line-height:28px">
+            We wish to inform you that the following payments are going to be due from you in respect of the plot. You are advised to kindly make payment online at <a href="http://72.167.225.87/nivesh/">http://72.167.225.87/nivesh/</a>
+        </p>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        {{table}}
+    </div>
+    <div class="clearfix"></div>
+    <div class="div-12col" style="width:100%; float:left">
+        <p style="text-align:justify; line-height:24px">
+            Kindly arrange to make the above payment by the due date {{dueDate}} failing which the action may be taken as per clause 1 of the Lease Deed.
+        </p>
+        <p style="text-align:justify; line-height:24px">
+            The payment will first be adjusted towards the interest due, if any upto the date of receipt of the payment and there after towards the premium due, if any, and the balance if any,
+            towards Lease Rent. The interest shall continue to accrue till amount of Installment is paid. No rebate will be admissible till amount of Installment is paid. No rebate will be admissible till further payment is made in time.
+        </p>
+        <p style="text-align:justify; line-height:24px">
+            This is without prejudice to our Legal notice, If any.
+        </p>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="div-12col" style="width:100%; float:left">
+        <p style="text-align:justify; line-height:24px">
+            E.&amp;.O.E.
+        </p>
+    </div>
+    <br />
+    <div class="clearfix"></div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6 text-right" style="width:40%; float:right; height:8%">
+        <ul class="list-unstyled" style="list-style-type:none; text-align:center">
+            <li>
+                Your's faithfully,
+            </li>
+            <li>For U.P. STATE INDL. DEV. CORPN. LTD.</li>
+            <li><span class="PreviewClass">{{RMName}}</span></li>
+            <li>(Regional Manager)</li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+    <div class="div-12col" style="border-bottom: 3px solid #ffc511; width:auto">&nbsp;</div>
+    <div class="div-12col">
+        <ul class="list-unstyled text-center" style="list-style-type:none; text-align:center">
+            <li>U.P. STATE INDUSTRIAL DEVELOPMENT CORPORATION Ltd.</li>
+            <li>CIN No - U26960UP1961SGC002834, Head Office, Kanpur</li>
+            <li>A-1/4, Lakhanpur, Kanpur-208024</li>
+            <li>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</li>
+            <li>Website:- www.onlineupsidc.com</li>
+        </ul>
+
+        <v>
+
+    </div>
+
+
+</div>
+</div>
+   
+

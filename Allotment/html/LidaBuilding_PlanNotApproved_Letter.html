@@ -1,0 +1,200 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .request-table tr {
+        font-size: 15px;
+        color: #2d2d2d;
+        border: 1px solid #fff !important;
+        text-align: left;
+        font-weight: 600;
+        background: #e0e0e0;
+        padding: 1px 6px !important;
+    }
+
+        .request-table tr th {
+            font-size: 15px;
+            background-color: #ffe600;
+        }
+
+        .request-table tr td a {
+            color: #337ab7;
+            font-weight: bold;
+        }
+
+    .div-report .hide_me {
+        display: none;
+    }
+
+    .header-ul li {
+        list-style-type: none;
+    }
+
+    .header-ul {
+        list-style-type: none;
+    }
+
+    ol li {
+        font-weight: bold;
+    }
+
+        ol li span {
+            font-weight: normal;
+        }
+</style>
+<link type="text/css" rel="stylesheet" href="css/theme.css" />
+<div id="Buildingletter" style="padding: 10px 10px; margin: 5px 5px; font-family: Segoe UI, Helvetica, Calibri; background:#fff;">
+    <div class="div-report" runat="server">
+        <div class="row">
+            <div class="div-4col" style="float:left;width:33%;">
+                <b style="font-weight:700; font-size:20px">U.P. State Industrial  Development Authority </b>
+                <br />
+                <br />
+
+            </div>
+
+            <div class="div-4col" style="width: 30%; float: left; text-align:center">
+                <img src="http://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none; height: 56px; margin-bottom:0;" />
+            </div>
+            <div class="div-4col text-left" style="width: 36%; float: left;">
+                <style>
+                    .header-ul li {
+                        list-style-type: none;
+                    }
+
+                    .header-ul {
+                        list-style-type: none;
+                    }
+                </style>
+                <ul class="list-unstyled header-ul pull-right" style="float:right;">
+                    <li><b><span>Lucknow</span></b></li>
+                    <li><b>UPSIDC</b></li>
+                    <li><b><span>{{OfficeAddress1}}</span></b></li>
+                    <li><b><span>{{OfficeAddress2}}</span></b></li>
+                    <li><b>Tel No. : <span>{{TelNo}}</span></b></li>
+                    <li><b>Email ID: <span>{{EmailId}}</span></b></li>
+                    <li><b>Website: www.onlineupsidc.com</b></li>
+
+
+                </ul>
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div style="border-bottom: 3px solid #ffc511;">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+            <div class="div-4col" style="width:70%; float:left"><b>Ref.No:</b><span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span><b>/SIDC-IA/</b><span class="myultext"><span class="PreviewClass">{{project_name}}</span></span></div>
+            <div class="div-4col" style="width:30%; float:left"><span style="float:right;"><b>Date:</b><span class="myultext"><span class="PreviewClass">{{IssueDate}}</span></span></span></div><br />
+            <div class="div-4col" style="width:60%; float:left">
+                <p><b>To,</b></p>
+                <ul style="list-style-type:none">
+                    <li><span class="myultext"><span class="PreviewClass">{{AllotteeName}}</span></span></li>
+                    <!--<li><span class="myultext"><span class="PreviewClass">{{Address}}</span></span></li>-->
+                </ul>
+            </div>
+            <div class="div-4col" style="width:40%; float:left">
+                <img src="{{QRC}}" width="150" height="150" style="float:right;">
+                <!--<img src="barcode.jpg" style="width: 145px;float: right;" />-->
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+
+            <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                <p><b>Subject:- Building Plan Approval for Gata/Plot No: <span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span> at <span class="myultext"><span class="PreviewClass">{{project_name}}</span></span></b></p>
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <div class="div-12col" style="width:100%; float:left">Dear Sir/Madam,</div>
+
+            <div class="div-12col" style="width:100%; float:left">
+                <p style="text-align:justify; line-height:28px">
+                    Please refer to your application  dated: <b><span class="myultext"><span class="PreviewClass">{{ApplicationDate}}</span></span></b> through which you have applied for the
+                    sanction/approval of building plan of the plot of (activity) <b><span class="myultext"><span class="PreviewClass">{{Activity}}</span></span></b>  <b><span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span></b> at  <b><span class="myultext"><span class="PreviewClass">{{project_name}}</span></span></b>.
+                    </p><p>
+                    The undersigned hereby approves the building plan for activity<b><span class="myultext"><span class="PreviewClass">{{Activity}}</span></span></b> submitted by you with following terms & conditions:-
+                     </p>
+            </div>
+            <style>
+            </style>
+            <div class="clearfix" style="clear:both;"></div>
+
+            <div class="div-12col" style="width:100%;">
+                <ul style="float:left; list-style-type:decimal">
+                    <li style="text-align:justify; line-height:28px">
+                        This permission is being given in accordance to the Uttar Pradesh State Industrial Development Area Building Regulations Act-1976. This permission neither seeks to effect favourably/ unfavourably the existing ownership rights gives any additional ownership rights in anyway. This approval neither affirms/ nor contraverts any litigated issue.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        If it is revealed that this approval has been obtained by submitting invalid/ non-genuine and false facts or documents, the approval shall be liable to be cancelled. Further the Authority shall be free to take up suitable legal action.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        Any proposal for construction over public road either in shape of stone or by constructing any arcade, balcony, cornice, chhajja or any other such construction if shown in the building plan shall not be deemed to be considered as approved simultaneously. Such proposal shall require specific approval of the concerned Municipal body/ Development Authority under its act & provision. 
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        If any change/alternation is sought in the approved building plan then the owner shall be required to submit a copy of this approval along with application for change/ alteration.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        The approval does not give any right to the owner or its authorized representative to make any construction on the public premises or to make any construction over or under the area through which an/the electricity line is passing unless and until such electricity has been removed by concerned power authorities.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        Mandatory green plantation, Parking provisions, Rain water harvesting and Anti Earthquake provisions as per norms of Authority/Govt, shall have to be developed and maintained by the owner inside the plot.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        The owner shall strictly abide by the terms & conditions laid down by the Fire Department while granting NOC. 
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        The authority reserves the right to demand any dues with regard to the layout approval if a balance/dues are discovered identified anytime in future. The owner shall be liable to deposit the same within the time allowed by the authority.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        The owner/Architect/ Engineer shall have to comply mandatorily with the provisions of Preperation and Finalisation of Plan Regulations-2018 part_B ( Lucknow Industrial Development Area plan regulisation 2009), Uttar Pradesh Industrial Area Development Act, 1976 (U.P. Act 6 of 1976).
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        Officers/ officials of the UPSIDA shall have the right to make site inspection anytime during Construction. 
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        This Approval shall be valid for 05 year or for an extended period as duly approved by the Authority.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        In case of any breach the concerning Engineer/Architect shall be liable to be blacklisted. Further the Authority may even consider cancellation of allotment.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">Additional causes as mentioned below are also remain part of the terms and  binding on you. 
+                     </li>
+
+                    {{AdditionalClause}}
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+
+            <br />
+
+            <span class="BP" style="font-size:12px;">{{ListofAnnexresBP}}</span>
+
+            <div class="clearfix"></div>
+            <br /><br />
+
+            <div class="div-12col text-right" style="width:100%; float:left;">
+                <ul class="list-unstyled" style="list-style-type:none; text-align:right">
+                    <li>
+                        <b style="margin-right: 60px;">Your's faithfully,</b>
+                    </li>
+                    <li><b>For U.P. STATE INDL. DEV. CORPN. LTD.</b></li>
+                    </br>
+                    <li><b style="margin-right: 40px;"><span class="myultext"><span class="PreviewClass">{{POName}}</span></span></b></li>
+                    <li><b style="margin-right: 40px;">(Project Officer)</b></li>
+                </ul>
+            </div>
+
+            <div class="div-12col" style="border-bottom: 3px solid #ffc511; width:auto">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div class="div-12col" style="width:100%;">
+                <ul class="text-center" style="list-style-type:none; text-align:center">
+                    <li><b> U.P. STATE INDUSTRIAL DEVELOPMENT AUTHORITY</b></li>
+                    <li><b> Head Office, Kanpur</b></li>
+                    <li><b>A-1/4, Lakhanpur, Kanpur-208024</b></li>
+                    <li><b>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</b></li>
+                    <li><b>Website:- www.onlineupsidc.com</b></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

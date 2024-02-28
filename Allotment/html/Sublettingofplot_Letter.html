@@ -1,0 +1,199 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+    .request-table tr {
+        font-size: 15px;
+        color: #2d2d2d;
+        border: 1px solid #fff !important;
+        text-align: left;
+        font-weight: 600;
+        background: #e0e0e0;
+        padding: 1px 6px !important;
+    }
+
+        .request-table tr th {
+            font-size: 15px;
+            background-color: #ffe600;
+        }
+
+        .request-table tr td a {
+            color: #337ab7;
+            font-weight: bold;
+        }
+
+    .div-report .hide_me {
+        display: none;
+    }
+
+    .header-ul li {
+        list-style-type: none;
+    }
+
+    .header-ul {
+        list-style-type: none;
+    }
+
+    ol li {
+        font-weight: bold
+    }
+
+        ol li span {
+            font-weight: normal
+        }
+</style>
+<link type="text/css" rel="stylesheet" href="css/theme.css" />
+<div id="Buildingletter" style="padding: 10px 10px; margin: 5px 5px; font-family: Segoe UI, Helvetica, Calibri; background:#fff;">
+    <div class="div-report" runat="server">
+        <div class="row">
+            <div class="div-4col" style="float:left;width:33%;">
+                <b style="font-weight:700; font-size:20px">U.P. State Industrial  Development Corporation Ltd.</b>
+                <br />
+                <br />
+
+            </div>
+
+            <div class="div-4col" style="width: 30%; float: left; text-align:center">
+                <img src="http://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none; height: 56px; margin-bottom:0;" />
+            </div>
+            <div class="div-4col text-left" style="width: 36%; float: left;">
+                <style>
+                    .header-ul li {
+                        list-style-type: none;
+                    }
+
+                    .header-ul {
+                        list-style-type: none;
+                    }
+
+                    ol li {
+                        font-weight: normal
+                    }
+
+                        ol li span {
+                            font-weight: normal
+                        }
+                </style>
+                <ul class="list-unstyled header-ul pull-right" style="float:right;">
+                    <li><b><span>{{RegionalOffice}}</span></b></li>
+                    <li><b>UPSIDC</b></li>
+                    <li><b><span>{{OfficeAddress1}}</span></b></li>
+                    <li><b><span>{{OfficeAddress2}}</span></b></li>
+                    <li><b>Tel No. : <span>{{TelNo}}</span></b></li>
+                    <li><b>Email ID: <span>{{EmailId}}</span></b></li>
+                    <li><b>Website: www.onlineupsidc.com</b></li>
+
+
+                </ul>
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div style="border-bottom: 3px solid #ffc511;">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+            <div class="div-4col" style="width:70%; float:left"><b>Ref.No:</b><span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span><b>/SIDC-IA/</b><span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></div>
+            <div class="div-4col" style="width:30%; float:left"><span style="float:right;"><b>Date:</b><span class="myultext"><span class="PreviewClass">{{IssueDate}}</span></span></span></div><br />
+            <div class="div-4col" style="width:60%; float:left">
+                <p><b>To,</b></p>
+                <ul style="list-style-type:none">
+                    <li><span class="myultext"><span class="PreviewClass">{{SublettingAllotteeName}}</span></span></li>
+                    <li><span class="myultext"><span class="PreviewClass">{{SublettingAllotteeAddress}}</span></span></li>
+                </ul>
+            </div>
+            <div class="div-4col" style="width:40%; float:left">
+                <img src="{{QRC}}" width="150" height="150" style="float:right;">
+                <!--<img src="barcode.jpg" style="width: 145px;float: right;" />-->
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+
+            <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                <p>
+                    <b>
+                        Subject:-Subletting of plot: <span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span> at I.A. <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span> in favour of <span class="myultext"><span class="PreviewClass">{{SublettingAllotteeName}}</span></span>
+                    </b> <br />
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <div class="div-12col" style="width:100%; float:left">Dear Sir/Madam,</div>
+            <div class="div-12col" style="width:100%; float:left">
+                <div class="div-12col" style="width:100%; float:left">
+                    With  reference to your   Application No <b><span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span></b> dated <b><span class="myultext"><span class="PreviewClass">{{ApplicationDate}}</span></span></b>
+                    regarding subletting of plot  Number <span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span> at I.A. <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span>
+                    has been considered and <span class="myultext"><span class="PreviewClass">{{SublettingPlotArea}}</span></span> sqmt. portion of proposed subletting in favour of <span class="myultext"><span class="PreviewClass">{{SublettingAllotteeName}}</span></span>
+                    for setting up unit of <span class="myultext"><span class="PreviewClass">{{ProjectName}}</span></span> is approved subject to following terms and conditions:-
+                </div>
+                <ol class="" style="float:left;padding-left:32px;">
+                    <li style="text-align:justify; line-height:25px">
+                        Subletting will be permitted for a period of  <b><span class="myultext"><span class="PreviewClass">{{sublettingyear}}</span></span></b> years only
+                    </li>
+
+                    <li style="text-align:justify">
+                        A subletting charge/rent @ <b><span class="myultext"><span class="PreviewClass">{{sublettingcharge}}</span></span></b>%  of the prevailing premium rate shall be chargeable for the industrial land per sqmt. per year on the area to be subleted i.e. <b><span class="myultext"><span class="PreviewClass">{{SublettingPlotArea}}</span></span></b> sqmt. which at present Rs <span class="myultext"><span class="PreviewClass">{{RateofPlot}}</span></span> Sq.Mtrs.Total Subletting Charge/Rent Rs <span class="myultext"><span class="PreviewClass">{{SublettingCharge}}</span></span>.and GST @ 18% Amounting to Rs <span class="myultext"><span class="PreviewClass">{{SublettingChargeGST}}</span></span> This amount shall have to be deposited in advance within 30 days of dispatch of this letter. The subletting fee shall have to be deposited every year accordingly in advance
+                    </li>
+                    <li style="text-align:justify">
+                        All the present and future constructions on the plot shall be  deemed to have been raised by original lessee of UPSIDC only and shall be subject to the provisions of terms and conditions of lease deed executed on <b><span class="myultext"><span class="PreviewClass">{{leasedeedDate}}</span></span></b>
+                    </li>
+                    <li style="text-align:justify">
+                        A tripartite agreement will be entered into amongst UPSIDC Ltd., the lessee and Sublette which shall contain all the terms and conditions of such subletting making the
+                        same binding on all the executants. The agreement shall ensure that person who has taken  permission  of subletting shall abide by the conditions of normal lease deed and
+                        agreement shall put the responsibility on the lessee to pay subletting charges and other dues. This agreement will have to be executed within 30 days from the date of this letter
+                        .
+                    </li>
+                    <li style="text-align:justify">
+                        (a) There should not be any excess liquid effluent more than the original unit <br />
+                        (b) The proposed unit should not be banned by government/D.I. on the specified location.<br />
+                        (c) The sublettee would have to obtain and submit N.O.C./consent of Pollution Control Board/ all and any other agency/govt. office within 06 months of the application or  before start of unit whichever is earlier.
+                    </li>
+                    <li style="text-align:justify">
+                        The sublettee shall be allowed to run only the project as mentioned in the letter hereinabove. Any violation shall result in automatic withdrawal of this offer letter.
+                    </li>
+                    <li style="text-align:justify">
+                        Stamp duty shall be payable as per government norms for tri parties agreement.
+                        In case of failure to comply only conditions as aforesaid within the stipulated time, this permission shall be stand automatically withdrawn, without any further notice to you.
+                    </li>
+                </ol>
+
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <span class="BP" style="font-size:12px;">{{ListofAnnexresBP}}</span>
+            <div class="clearfix"></div>
+            <div class="div-12col" style="width:100%;padding-top:4%">
+                Copy to following for information and necessary action please:-
+                <li style="list-style-type:none">1.  Incharge (Indl. Area), <span>A-1/4, UPSIDC Complex , Lakhanpur , Kanpur 208024 (U.P.)</span></li>
+                <li style="list-style-type:none">2.  <span class="PreviewClass">{{AllotteeName}}</span> R/o:-<span class="PreviewClass">{{Address}}</span></li>
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br /><br />
+            <div class="div-12col text-right" style="width:100%; float:left;">
+                <ul class="list-unstyled" style="list-style-type:none; text-align:right">
+                    <li>
+                        <b style="margin-right: 60px;">Your's faithfully,</b>
+                    </li>
+                    <li><b>For U.P. STATE INDL. DEV. CORPN. LTD.</b></li>
+                    </br>
+                    <li><b style="margin-right: 40px;"><span class="myultext"><span class="PreviewClass">{{RMName}}</span></span></b></li>
+                    <li><b style="margin-right: 40px;">(Regional Manager)</b></li>
+                </ul>
+            </div>
+            <div class="div-12col" style="border-bottom: 3px solid #ffc511; width:auto">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div class="div-12col" style="width:100%;">
+                <ul class="text-center" style="list-style-type:none; text-align:center">
+                    <li><b> U.P. STATE INDUSTRIAL DEVELOPMENT CORPORATION Ltd.</b></li>
+                    <li><b>CIN No - U26960UP1961SGC002834, Head Office, Kanpur</b></li>
+                    <li><b>A-1/4, Lakhanpur, Kanpur-208024</b></li>
+                    <li><b>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</b></li>
+                    <li><b>Website:- www.onlineupsidc.com</b></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

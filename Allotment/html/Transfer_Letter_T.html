@@ -1,0 +1,324 @@
+﻿
+            <div id="DivP" style="padding: 5px 5px; margin: 5px 5px; font-family: Segoe UI, Helvetica, Calibri; background:#fff;">
+
+                <div class="div-report" runat="server">
+                   <div class="div-4col" style="float:left;width:33%;">
+                    <b style="font-weight:700; font-size:20px">U.P. State Industrial  Development Corporation Ltd.</b>
+                    <br />
+                    <br />                
+                </div>
+                <div class="div-4col" style="width: 30%; float: left; text-align:center">
+                    <img src="http://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none; height: 56px; margin-bottom:0;" />
+                </div>
+                <div class="div-4col text-left" style="width: 36%; float: left;">
+                    <style>
+                        .header-ul li {
+                            list-style-type:none;
+                        }
+                        .header-ul {
+                            list-style-type: none;
+                        }
+                    </style>
+                    <ul class="list-unstyled header-ul pull-right" style="float:right;">
+                        <li><b><span>{{RegionalOffice}}</span></b></li>
+                        <li><b>UPSIDC</b></li>
+                        <li><b><span>{{OfficeAddress1}}</span></b></li>
+                        <li><b><span>{{OfficeAddress2}}</span></b></li>
+                        <li><b>Tel No. : <span>{{TelNo}}</span></b></li>
+                        <li><b>Email ID: <span>{{EmailId}}</span></b></li>
+                        <li><b>Website: www.onlineupsidc.com</b></li>
+						 
+                    </ul>
+                </div>
+                <div class="clearfix" style="clear:both;"></div>
+                <div style="border-bottom: 3px solid #ffc511;">&nbsp;</div>
+                <div class="clearfix" style="clear:both;"></div>
+                <br />
+				<div class="div-4col" style="width:70%; float:left"><b>Ref.No:</b><span class="myultext"><span class="PreviewClass">{{lblRefno}}</span></span><b>/SIDC-IA/</b><span class="myultext"><span class="PreviewClass">{{lblIAName}}</span></span></div>
+                <div class="div-4col" style="width:30%; float:left"><span style="float:right;"><b>Date:</b><span class="myultext"><span class="PreviewClass">{{lblDocumentIssueDate}}</span></span></span></div><br />
+				<div class="clearfix" style="clear:both;"></div>
+				<div class="div-4col" style="width:60%; float:left">
+				<p><b>To,</b></p>
+                    <ul style="list-style-type:none">
+                        <li><b><span class="myultext"><span class="PreviewClass">{{Transfreename}}</span></span></b></li>
+                        <li><b><span class="myultext"><span class="PreviewClass">{{lblTransfereeAddress}}</span></span></b></li>
+                    </ul>
+				</div>
+				  <div class="div-4col" style="float:right;">
+                        <img src="{{QRC}}" width="150" height="150">
+                    </div>
+                <div class="clearfix" style="clear:both;"></div>
+                <br />
+				<div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                    <p>Subject:- Permission for Transfer of Plot No <span class="PreviewClass myultext lblPlotNo"> <span class="PreviewClass">{{lblPlotNo}}</span> </span> in the Industrial Area <span class="PreviewClass">&nbsp;{{lblIAName}}&nbsp;</span></p>
+                </div>
+				<br />
+                <div class="clearfix"></div>
+                <br />
+                 <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                    Dear Sir/Ma'am,
+                </div>
+                <div class="clearfix"></div>
+                        <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                            <p style="text-align:justify; line-height:25px">
+                                Please refer to application of <span class="PreviewClass">{{Transfreename}}</span>  dated <span class="PreviewClass">{{lblRefDate}}</span>
+                                regarding transfer of above noted plot in your favour to setting up <span class="PreviewClass">{{lblIndustryType}} .</span>
+                                <br />
+                                In this connection, we are pleased to permit the aforesaid transfer subject to payment of transfer levy
+                                @ <span class="PreviewClass lblTransferLevyPer">{{lblTransferLevyPer}}</span> % of current rate Rs.<span class="PreviewClass lblPlotRate">{{lblPlotRate}}</span> per square meter
+                                on plot area of  <span class="PreviewClass lblPlotNo">{{lblPlotNo}}</span> in the Industrial Area
+                                &nbsp;<span class="PreviewClass">{{lblIAName}}</span> which is <span class="PreviewClass lblPlotSize">{{lblPlotSize}}</span> square meter on the following terms and conditions:-
+
+                            </p>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+				 <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                    <style>
+                        ol li {
+                            font-weight: bold
+                        }
+
+                            ol li span {
+                                font-weight: normal
+                            } 
+                    </style>
+                    <ol class="" style="float:left;padding-left:32px;">
+					<li style="text-align:justify;line-height:25px"><span> You shall clear our total balance dues amounting to Rs.
+					<span class="PreviewClass lblTotalBalanceDues">{{lblTotalBalanceDues}}</span> (towards Premium Rs.<span class="PreviewClass lblDue_Premium">{{lblDue_Premium}}</span>
+								Interest of Premium Rs.<span class="PreviewClass lblDue_Intt_Premium">{{lblDue_Intt_Premium}}</span>
+                                , Maintenance Charges Rs.<span class="PreviewClass lblDue_Maint">{{lblDue_Maint}}</span>
+								, Interest on Maintenance Charges Rs.<span class="PreviewClass lblDue_Intt_Maint">{{lblDue_Intt_Maint}}</span> and Lease Rent Rs.
+								<span class="PreviewClass lblDue_Lease">{{lblDue_Lease}}</span>
+								,GST on Lease Rent Rs.<span class="PreviewClass lblDue_GST_Lease">{{lblDue_GST_Lease}}</span>, Time Extension Fee Rs.
+								<span class="PreviewClass lblDue_TEF">{{lblDue_TEF}}</span>, Interest on Time Extension Fee Rs.<span class="PreviewClass lblDue_Intt_TEF">{{lblDue_Intt_TEF}}</span>
+								) within 30 days from the date of this letter.</span></li>
+								
+								<li style="text-align:justify; line-height:25px">
+                                <span>You shall have to pay transfer levy @ Rs
+								<span class="PreviewClass lblTotalLevyamount">{{lblrate_per_square_meter}}</span>
+								amounting to Rs. <span class="PreviewClass lblTotalLevyamount">{{lblTotalLevyamount}}</span>
+                                within 30 days. Alternatively you may choose to pay <span class='PreviewClass lblPrePercent'>{{lblPrePercent}}</span> of the amount i.e. 
+								Rs.<span class='PreviewClass lblPreLevyAmt'>{{lblPreLevyAmt}}</span>
+								within 30 days form the date of this letter and the balance <span class='PreviewClass lblbalPercent'>{{lblbalPercent}}</span> % transfer levy of
+								Rs. <span class='PreviewClass lblbalAmount'>{{lblbalAmount}}</span>in
+								<span class='PreviewClass lblNoInstallment'>{{lblNoInstallment}}</span>
+								half yearly instalments, the first of which shall fall due on
+								<span class='PreviewClass FirstInstallmentDate'>{{FirstInstallmentDate}}</span>.
+								 Subsequent installment there on along with interest 
+								   @<span class='PreviewClass lblInterestPerAnnum'>{{lblInterestPerAnnum}}</span>
+								on the balance amount.For timely payment a rebate @<span class='PreviewClass lblRebatePer'>{{lblRebatePer}}</span>
+								% will be admissible.
+								</span>                             
+                            </li>
+
+								<li style="text-align:justify; line-height:25px"><span>In case deposits has been made by ex-allottee against the plot, the same will be adjusted first towards Interest and Use and Occupation Charges/Lease Rent upto date of payment and balance if any, towards premium. In case a balance payability is found after adjustment as above, the same shall be payable by you.</span></li>
+								<li style="text-align:justify; line-height:25px"><span>Ex-allottee shall submit an affidavit to the effect that entire assets/structures whatsoever is existing on the plot, 
+																						stands duly  transferred in your favour and that he shall never claim any amount /compensation etc. in this regard from the Authority/Corporation . 
+																						You will also have to submit an affidavit in confirmation of transfer of assets/structures in your favour with the clear stipulation that in the event of any dispute in connection with transfer you shall indemnify UPSIDC/UPSIDA against any claim/ litigation arising out of above transfer.</span></li>
+                            <li style="text-align:justify">
+                               <span> The existing allotment/transfer dated
+                                 <span class="PreviewClass lbl_existing_allotment_transfer_dated">{{lbl_existing_allotment_transfer_dated}}</span>
+                                 Agreement dated <span class="PreviewClass lbl_existing_allotment_transfer_dated">{{lbl_Agreement_dated}}</span>
+                                Possession Memo dated <span class="PreviewClass lbl_existing_allotment_transfer_dated">{{lbl_Possession_Memo_dated}}</span> and Lease Deed Executed dated <span class="PreviewClass lbl_existing_allotment_transfer_dated">{{lbl_Lease_Deed_dated}}</span>
+                                shall be surrendered by  ex-allottee in favour of the UPSIDC/UPSIDA along with the possession of above noted plot before execution of fresh lease deed.
+								</span>
+                            </li>
+							<li style="text-align:justify; line-height:25px"><span>You will have to submit Non-Judicial Stamp Papers/ Bank Guarantee as per norms purchased from Distt.
+																				Treasury, Kanpur Dehat/ Bank for execution of lease deed of plot within 60 days form the date of this letter.</span></li>
+							<li style="text-align:justify; line-height:25px"><span>Transfer of vacant and untilized plot shall not be allowed.</span></li>
+							<li style="text-align:justify; line-height:25px"><span>In case of any demand of Stamp Papers is made in respect of transfer of this plot by Government of U.P. the same shall be borne by you.</span></li>
+							<li style="text-align:justify; line-height:25px"><span>You may either submit Sale deed for structure situated over the plot or submit additional Stamps/ Bank Guarantee towards the cost of constructions/ machinery on the plot.within 30 days from the date of this letter alongwith stamps as mentioned in above point number 6.</span></li>
+							 
+							<li style="text-align:justify; line-height:25px">
+							<span><b>LEASE DEED:-</b> <br>
+							You shall have to get lease deed executed in your favour on new terms & conditions within 60 days from the date of issuance of this letter by submitting stamps mentioned 
+							above alongwith other documents. You will have to submit NOC of pollution Control Board for proposed manufacturing item before execution of lease deed.
+							</span>
+							</li>
+                            <li style="text-align:justify">
+							<span>
+                                Lease Period shall be allowed to you for the remaining period of orginally allowed lease i.e. 90 years from  
+                                <span class="PreviewClass lbl_existing_allotment_transfer_dated">{{lbl_existing_allotment_transfer_dated}}</span>                                 
+                                </span>
+                            </li>
+							<li style="text-align:justify">
+							<span>
+                                <b>POSSESSION FORM:-</b><br>
+								You will take the possession of the plot just after execution of Lease Deed or latest by 01 month from the date of execution of Lease Deed
+								</span>
+                            </li>
+							<li style="text-align:justify">
+							<span><b>BUILDING PLAN APPROVAL:- </b><br>Submit building plan within 1 month form the date of possession.  
+							If no building plan is  submitted by you  within 3 months, the allotment will be cancelled as per rules.
+							</span>
+							</li>
+							 <li style="text-align:justify">
+							 <span>
+                                You shall establish unit on the plot covering minimum 30% of plot area within a period not exceeding 1 years. 
+								Following documents shall have to be submitted as a proof of production :-
+								
+                                <ol class="list-unstyled" style="list-style-type:square">
+                                    <li style="text-align:justify"><span>Udyog Aadhar Showing the plot no and date of stating production</span></li>
+                                    <li style="text-align:justify"><span>GST Registration and Tax Returns/Assessment Orders</span></li>
+                                    <li style="text-align:justify"><span>Meter Sealing Certificate and Electricity Bills of First 3 months.</span></li>
+                                    <li style="text-align:justify"><span>Sale and Purchase Bill of raw material and finished goods for first 3 months along with purchase of Machinery Bills.</span></li>
+                                </ol>
+								
+								</span>
+                            </li>
+							<li style="text-align:justify">
+                                <span>Allotment /Transfer/ Lease Term shall be liable to be terminated if any of the activities mentioned at 10, 12, 13, and 14 is not executed/
+								completed within the time stipulated.
+								</span>
+                            </li>
+							<li style="text-align:justify">
+							<span>
+                                You shall also deposit within 30 days of date of demand any dues communicated by the UPSIDA from time to time such recurring fee in nature of Service and/ 
+								or Maintenance Charges of whatever description (including charges for supply of water, of expenses of maintenance or roads, 
+								culverts, drains, parks etc. and other common facilities and services) as may form time to time be determined by Authority/Corporation 
+								and in case of default you shall liable to pay interest @ <span class="PreviewClass lblInterestPerAnnum">{{lblInterestPerAnnum}}</span>
+                                p.a. on the amount due.
+								</span>
+                            </li>
+							
+							 <li style="text-align:justify; line-height:25px">
+                            <span>
+                                You shall be liable to pay Lease Rent @Rs.<span class="myultext"><span class="PreviewClass LeaseRent1">{{LeaseRent1}}</span></span>/- per sqm.per year for period of initial 1st 30 years,
+                                @Rs.<span class="myultext"><span class="PreviewClass LeaseRent2">{{LeaseRent2}}</span></span>/- per sqm.per year for the next 30 years after expiry of 1st 30 years and @ Rs.<span class="myultext"><span class="PreviewClass LeaseRent3">{{LeaseRent3}}</span></span>/- per sqm. per year for next after expiry of next 30 years.
+                            </span>
+                        </li>
+							<li style="text-align:justify">
+							<span>
+							You shall not be allowed to reconstitute/ change project on/ sublet/ transfer/ subdivide/ amalgamate/ mortgage/ 
+							change partners or shareholders without prior approval in writing by  this Authority/Corporation. 
+							Any such act without due permission may result in cancellation of the allotment /transfer /lease.
+							</span>
+							</li>
+							<li style="text-align:justify">
+							<span>
+							You shall abide by all the relevant Government rules and norms corresponding to the project you are intending to set up 
+							and shall be required to seek necessary permissions before setting up the unit. 
+							You shall further indemnify the Authority/Corporation against any such violation/ breach committed by you. 
+							</span>
+							</li>
+							<li style="text-align:justify">
+							<span>
+							The transfer/ allotment / lease shall become null and void in case it is revealed subsequently that the same was obtained by you by submitting false, 
+							fictitious and/ or fabricated documents facts.
+							</span>
+							</li>
+							<li style="text-align:justify">
+								<span>
+                                The above offer shall be valid till the expiry date mentioned in the letter or 30 days from date of issue of this letter, whichever is earlier. 
+								If after expiry of the offer the applicant requests for extension of offer and the reasons for the default submitted by him/her are found just
+								and proper to the satisfaction of Management and the offer is extended, by UPSIDA interest shall become payable
+								@ <span class="PreviewClass lblInterestPerAnnum">{{lblInterestPerAnnum}}</span> %
+                                from the date of this letter. However, if the prevailing rate of the alloted area changes or due to passage of time, 
+								percentage of levy changes, then the offer can only be renewed on new allotment rates/levy only.
+								</span>
+                            </li>					          
+                            <li style="text-align:justify">
+								<span>
+                                You will mention in the postal address or your corresponding letters invariably the name of UPSIDC/UPSIDA  Industrial Area 
+                                <span>
+                                    <u class="myultext">
+                                        <span class="PreviewClass">{{lblIAName}}</span>
+                                    </u>
+                                
+                            </li>      
+								<li style="text-align:justify">
+								<span>
+                                Additional clause/s as mentioned in attached page shall also remain part of terms of transfer & binding on you 
+                                <span>
+                            </li>
+                        </ol>
+
+                        </p>
+                        <p style="text-align:justify">
+                           Kindly confirm your acceptance in writing to above terms and conditions within 07 days form the date of this letter,
+						   failing which this offer shall stand automatically withdrawn.
+                        </p>
+                        <br />
+
+                        <div class="div-12col text-right" style="width:100%; float:left;">
+                            <ul class="list-unstyled" style="list-style-type:none; text-align:right; ">
+                                <li>
+                                    <b style="margin-right: 60px;">Your's faithfully,</b>
+                                </li>
+
+								<li><b style="margin-right: 40px;"><span class="myultext"><span class="PreviewClass">{{RMName}}</span></span></b></li>
+                      
+                        <li><b style="margin-right: 40px;">(Regional Manager)</b></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br />
+
+
+                        <div class="div-12col" style="width:100%;padding-top:6%">
+                            <div class="div-4col text-left" style="width: 40%; float: left;">
+                                <p style="text-align:left">
+                                    Ref. No 
+                                        <u class="myultext">
+                                            <span class="PreviewClass">{{lblRefno}}</span>
+                                        </u>
+                                    </b>
+                                </p>
+                            </div>
+
+
+                            <div class="div-4col text-left" style="width: 25%; float: left;">
+                                <p style="text-align:left">
+                                    /SIDC-IA 
+                                        <u class="myultext">
+                                            <span class="PreviewClass">{{lblIAName}}</span>
+                                        </u>
+                                    </b>
+                                </p>
+                            </div>
+
+                            <div class="div-4col text-left" style="width: 15%; float: left;">
+                                <p style="text-align:left">
+                                    Plot No:- 
+                                        <u class="myultext">
+                                            <span class="PreviewClass lblPlotNo">{{lblPlotNo}}</span>
+                                        </u>
+                                    </b>
+                                </p>
+                            </div>
+                            <div class="div-4col text-left" style="width: 20%; float: left;">
+                                <p>
+                                    Dated : 
+                                        <u class="myultext">
+                                            <span class="PreviewClass lblDocumentIssueDate">{{lblDocumentIssueDate}}</span>
+                                        </u>
+                                    </b>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="div-12col" style="width:100%;padding-top:4%">
+                             Copy to following for information and necessary action please:-</b>
+							 <li style="list-style-type:none">1.  Sr.Manager/Manager(I.A.), <span>{{OfficeAddress1}}</span></li>
+                            <li style="list-style-type:none">2.  <span class="PreviewClass">{{lblTransferorname}}</span> R/o:-<span class="PreviewClass">{{lblTransfereeAddress}}</span></li>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br />
+                    <br />
+                    <br />
+                    <br />
+
+                        <div class="div-12col" style="border-bottom: 3px solid #000000; width:auto">&nbsp;</div>
+                        <div class="div-12col">
+                            <ul class="list-unstyled text-center" style="list-style-type:none; text-align:center">
+                                <li><b> U.P. STATE INDUSTRIAL DEVELOPMENT CORPORATION Ltd.</b></li>
+                                <li><b>CIN No - U26960UP1961SGC002834, Head Office, Kanpur</b></li>
+                                <li><b>A-1/4, Lakhanpur, Kanpur-208024</b></li>
+                                <li><b>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</b></li>
+                                <li><b>Website:- www.onlineupsidc.com</b></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>

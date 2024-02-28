@@ -1,0 +1,219 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+    .request-table tr {
+        font-size: 15px;
+        color: #2d2d2d;
+        border: 1px solid #fff !important;
+        text-align: left;
+        font-weight: 600;
+        background: #e0e0e0;
+        padding: 1px 6px !important;
+    }
+
+        .request-table tr th {
+            font-size: 15px;
+            background-color: #ffe600;
+        }
+
+        .request-table tr td a {
+            color: #337ab7;
+            font-weight: bold;
+        }
+
+    .div-report .hide_me {
+        display: none;
+    }
+
+    .header-ul li {
+        list-style-type: none;
+    }
+
+    .header-ul {
+        list-style-type: none;
+    }
+    ol li {
+        font-weight: bold
+    }
+
+        ol li span {
+            font-weight: normal
+        }
+</style>
+<link type="text/css" rel="stylesheet" href="css/theme.css" />
+<div id="Buildingletter" style="padding: 10px 10px; margin: 5px 5px; font-family: Segoe UI, Helvetica, Calibri; background:#fff;">
+    <div class="div-report" runat="server">
+        <div class="row">
+            <div class="div-4col" style="float:left;width:33%;">
+                <b style="font-weight:700; font-size:20px">U.P. State Industrial  Development Corporation Ltd.</b>
+                <br />
+                <br />
+
+            </div>
+
+            <div class="div-4col" style="width: 30%; float: left; text-align:center">
+                <img src="http://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none; height: 56px; margin-bottom:0;" />
+            </div>
+            <div class="div-4col text-left" style="width: 36%; float: left;">
+                <style>
+                    .header-ul li {
+                        list-style-type: none;
+                    }
+
+                    .header-ul {
+                        list-style-type: none;
+                    }
+                </style>
+                <ul class="list-unstyled header-ul pull-right" style="float:right;">
+                    <li><b><span>{{RegionalOffice}}</span></b></li>
+                    <li><b>UPSIDC</b></li>
+                    <li><b><span>{{OfficeAddress1}}</span></b></li>
+                    <li><b><span>{{OfficeAddress2}}</span></b></li>
+                    <li><b>Tel No. : <span>{{TelNo}}</span></b></li>
+                    <li><b>Email ID: <span>{{EmailId}}</span></b></li>
+                    <li><b>Website: www.onlineupsidc.com</b></li>
+
+
+                </ul>
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div style="border-bottom: 3px solid #ffc511;">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+            <div class="div-4col" style="width:70%; float:left"><b>Ref.No:</b><span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span><b>/SIDC-IA/</b><span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></div>
+            <div class="div-4col" style="width:30%; float:left"><span style="float:right;"><b>Date:</b><span class="myultext"><span class="PreviewClass">{{IssueDate}}</span></span></span></div><br />
+            <div class="div-4col" style="width:60%; float:left">
+                <p><b>To,</b></p>
+                <ul style="list-style-type:none">
+                    <li><span class="myultext"><span class="PreviewClass"> {{LetterFrom}}</span></span></li>
+                    <li><span class="myultext"><span class="PreviewClass">{{BankName}}</span></span></li>
+                    <li><span class="myultext"><span class="PreviewClass">{{BranchName}}</span></span></li>
+                </ul>
+            </div>
+            <div class="div-4col" style="width:40%; float:left">
+                <img src="{{QRC}}" width="150" height="150" style="float:right;">
+                <!--<img src="barcode.jpg" style="width: 145px;float: right;" />-->
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+
+            <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                <p><b>Subject:- Permission for issuance of Noc for permission to Mortgage in favour of Financial Institution: <span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span> at I.A. <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></p></b>
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <div class="div-12col" style="width:100%; float:left">Dear Sir/Madam,</div>
+
+            <div class="div-12col" style="width:100%; float:left">
+                <p style="text-align:justify; line-height:28px">
+
+                    With  reference to your sanction letter no: <b><span class="myultext"><span class="PreviewClass">{{letterno}}</span></span></b> dated. <b><span class="myultext"><span class="PreviewClass">{{letterDate}}</span></span></b>
+                    and Application No <b><span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span></b> dated <b><span class="myultext"><span class="PreviewClass">{{ApplicationDate}}</span></span></b>
+                    and consent of original allottee. We are forwarding herewith the Original Lease Deed of  Plot Number <span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span> at I.A. <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span>
+                    with permission to create equitable mortgage and to make use of the enclosed deed, for the purpose with following stipulation.
+                </p>
+            </div>
+            <style>
+            </style>
+            <div class="clearfix" style="clear:both;"></div>
+            <ol>
+                <li style="text-align:justify;line-height:25px">
+                    <span>
+                        We reserve the right to call back the original lease deed and selected in the event of any urgency and in case there arises hereinafter any reservation, either on part of your corporation/bank or on the part of
+                        <span class="myultext"><span class="PreviewClass">{{AllotteeName}}</span></span>  in accepting and making payment of our dues on first disbursement of the loan sanctioned to the firm or in case they fail
+                        to created the said mortgage or complete such other formalities as stipulated for release of the loan within a reasonable period.
+                    </span>
+                </li>
+                <li style="text-align:justify;line-height:25px">
+                    <span>
+                        As and when the loan advanced by you is fully repaid the original lease deed and selected of plot would be returned to us and till then it would not be transferred to anyone else without our prior consent in writing.
+                    </span>
+                </li>
+                <li style="text-align:justify;line-height:25px">
+                    <span>
+                        The acceptance of the original lease deed and utilization of it for creation of mortgage by your bank would confirm that you have agreed to make the payment of a sum of Rs. Nill towards balance premium of land along with interest falling due till date of remittance of the above amount to U.P. State Industrial Development Corporation Limited direct from the first disbursement of the loan, on priority after creation of equitable mortgage, but not later than NIL. In case forgoing conditions and liabilities are not acceptable to your Bank the original lease deed may kindly be returned to this corporation immediately.
+                    </span>
+                </li>
+                <li style="text-align:justify;line-height:25px">
+                    <span>
+                        We may further reiterate that in the event of payment as assured in your referred letter not being made by <span class="myultext"><span class="PreviewClass">{{AllotteeName}}</span></span> . this permission to create mortgage should stand rescinded without further notice, unless otherwise extended for further period
+                    </span>
+                </li>
+                <li style="text-align:justify;line-height:25px">
+                    <span>
+                        That the loan/cash limit sanctioned by you will only be utilized for carrying out construction/production of the unit as per lease deed.
+                    </span>
+                </li>
+                <li style="text-align:justify;line-height:25px">
+                    <span>
+                        In case of any transfer, auction etc. Transfer Levy as per prevailing shall be payable.
+                    </span>
+                </li>
+                <li style="text-align:justify;line-height:25px">
+                    <span>
+                        Before taking any action as mortgagee, you will have to inform the Corporation beforehand and obtain N.O.C. from the Corporation, so as to recover the dues of the Corporation and enforce applicability of transfer levy otherwise, any auction/transfer made as mortgagee shall not be recognised by the Corporation.<br /><br />
+                        We may further inform you that the above plot has been allotted to the lease after its acquisition. The land was transferred to this corporation through a proper conveyance deed by the Government free from encumbrances on the plot except the dues of this corporation accrued on it. <br /><br />
+                    </span>
+                </li>
+                Note: If any amount is found to be recoverable from allottee at later stage the same shall be payable by the Bank directly to UPSIDC (with interest if any) without any failure & binding on the Bank.
+
+
+            </ol>
+            <ul>
+                {{AdditionalClause}}
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+
+        <br />
+
+        <span class="BP" style="font-size:12px;">{{ListofAnnexresBP}}</span>
+
+        <div class="clearfix"></div>
+        <br /><br />
+
+        <div class="div-12col text-right" style="width:100%; float:left;">
+            <ul class="list-unstyled" style="list-style-type:none; text-align:right">
+                <li>
+                    <b style="margin-right: 60px;">Your's faithfully,</b>
+                </li>
+                <li><b>For U.P. STATE INDL. DEV. CORPN. LTD.</b></li>
+                </br>
+                <li><b style="margin-right: 40px;"><span class="myultext"><span class="PreviewClass">{{RMName}}</span></span></b></li>
+                <li><b style="margin-right: 40px;">(Regional Manager)</b></li>
+            </ul>
+        </div>
+        <div class="div-4col" style="width:35%; float:left;page-break-before:always;">
+            <b>No:   <span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span></b>
+        </div>
+        <div class="div-4col" style="width:25%; float:left; text-align:left">
+            <b>SIDC-IA:   <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></b>
+        </div>
+        <div class="div-4col" style="width:20%; float:left; text-align:left">
+            <b>Plot No.:   <span class="myultext"><span class="PreviewClass lblPlotNo">{{PlotNo}}</span></span></b>
+        </div>
+        <div class="div-4col" style="width:20%; float:left; text-align:left">
+            <b>Date:   <span class="myultext"><span class="PreviewClass">{{IssueDate}}</span></span>
+        </div>
+        <div class="div-12col" style="width:100%;padding-top:2%; padding-bottom:8%">
+            <b> Copy forwarded for information and necessary action to:-</b>
+            <li style="list-style-type:none;font-family:Arial">1.<span class="myultext"><span class="PreviewClass">{{AllotteeName}}</span></span> <span class="myultext"><span class="PreviewClass">{{Address}}</span></span> </li>
+        </div>
+        <div class="div-12col" style="border-bottom: 3px solid #ffc511; width:auto">&nbsp;</div>
+        <div class="clearfix" style="clear:both;"></div>
+        <div class="div-12col" style="width:100%;">
+            <ul class="text-center" style="list-style-type:none; text-align:center">
+                <li><b> U.P. STATE INDUSTRIAL DEVELOPMENT CORPORATION Ltd.</b></li>
+                <li><b>CIN No - U26960UP1961SGC002834, Head Office, Kanpur</b></li>
+                <li><b>A-1/4, Lakhanpur, Kanpur-208024</b></li>
+                <li><b>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</b></li>
+                <li><b>Website:- www.onlineupsidc.com</b></li>
+            </ul>
+
+        </div>
+
+    </div>
+    </div>
+</div>
+

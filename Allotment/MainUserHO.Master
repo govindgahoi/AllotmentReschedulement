@@ -1,0 +1,549 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainUserHO.master.cs" Inherits="Allotment.MainUserHO" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+   <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="/css/theme.css" rel="stylesheet" />
+    <link href="/css/Wizard.css" rel="stylesheet" />
+    <link href="/css/Main.css" rel="stylesheet" />
+    <link href="css/style4.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="/js/bootstrap.min.js"></script>
+    <link href="css/chosen.min.css" rel="stylesheet" />
+     <script src="js/jquery-ui.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        @media only screen and (min-width: 768px) {
+            .content {
+                /*padding: 51px 15px 0px 15px;*/
+                min-height: 200px;
+            }
+
+            .ul-nav-div {
+                min-height: 92vh;
+                max-height: 92vh;
+                overflow-y: auto;
+            }
+
+            /*.theme-blue .navbar {
+                background: #ffc511;
+                padding: 1px 10px 0 0;
+                position: fixed;
+                width: 100%;
+                z-index: 99;
+            }
+
+            .sidebar-nav {
+                width: 240px;
+                position: fixed;
+                float: left;
+                border-top: none;
+                top: 50px;
+                border-left: none;
+                margin: 0em;
+            }*/
+        }
+
+        .fgh {
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            top: 0
+        }
+
+        .hgf {
+            z-index: 1000;
+            margin: 300px auto;
+            padding: 10px;
+            width: 130px;
+            background-color: White;
+            border-radius: 10px;
+            filter: alpha(opacity=100);
+            opacity: 1;
+            /*-moz-opacity: 1;*/
+        }
+
+        #line-chart {
+            height: 300px;
+            width: 800px;
+            margin: 0px auto;
+            margin-top: 1em;
+        }
+
+        .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+            color: rgb(45,45,45);
+        }
+
+        .sidebar-nav ul li a {
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .sidebar-nav.sticky {
+                /*display: block !important;*/
+                position: relative !important;
+            }
+
+            #sidebar {
+                max-width: 100% !important;
+                min-width: 100% !important;
+                margin-left: 0 !important;
+            }
+
+                #sidebar ul li a i {
+                    display: inline !important;
+                }
+
+                #sidebar ul li a {
+                    padding: 0 20px !important;
+                }
+
+                #sidebar ul ul a {
+                    color: #fff !important;
+                }
+
+                    #sidebar ul ul a:hover {
+                        color: #000 !important;
+                    }
+
+                    #sidebar ul ul a.currentPage {
+                        color: #000 !important;
+                    }
+        }
+
+        .my-dash-table-status tr td:nth-child(1) {
+            text-align: left;
+            position: absolute;
+            height: 50px;
+            width: 11.3em;
+            font-size: 12px;
+            left: 28px;
+        }
+
+        .my-dash-table-status tr th:nth-child(1) {
+            text-align: left;
+            position: absolute;
+            width: 10.3em;
+            left: 28px;
+        }
+
+        #divsectionrecommendation {
+            min-height: 154px;
+        }
+
+        #divoperational {
+            min-height: 154px;
+        }
+
+        #divvalidation {
+            min-height: 154px;
+        }
+
+        #divregulations {
+            min-height: 154px;
+        }
+
+        #divcurrentstatus {
+            min-height: 154px;
+        }
+
+        .status-bar-bottom {
+            position: relative;
+            background: #f5f5f5;
+            bottom: 0;
+            /* margin-top: 1px; */
+            border: 1px solid #ccc;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .ul-plot-view li {
+            border-right: 1px solid #ccc;
+            min-width: 257px;
+        }
+    </style>
+</head>
+<body class=" theme-blue">
+   
+    <form id="form1" runat="server">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".topbtncollapse" onclick="mytopbtnFunction()" style="top: -1px; z-index: 99999; right: -2px; padding: 4px 7px; margin-top: 11px; background: transparent; border: 1px solid #000; color: #000;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <!--<span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>-->
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" onclick="mytarFunction()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="" href="#"><span class="navbar-brand">
+                    <img src="/images/upsidclogo.png" class="bas-logo-img" style="width:233px;height:40px;" /></span></a>
+            </div>
+            <%--<nav class="menu">
+                    <ul>
+                        <li class="active">
+                            <a href="../DashBoard.aspx">Home</a>
+                        </li>
+                        <li class="drop-down">
+                            <a href="../ServiceTimelines.aspx">Service Request</a>
+                        </li>
+                         <li class="drop-down">
+                            <a href="../ServiceTimelines.aspx">Track Service Request</a>
+                        </li>
+                         <li class="drop-down">
+                            <a href="../ServiceTimelines.aspx">Check Payment Dues</a>
+                        </li>
+                       
+                    </ul>
+                </nav>--%>
+
+            <div class="navbar-collapse collapse" style="height: 1px;">
+
+
+
+
+                <ul id="main-menu" class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span style="position: relative; top: 3px;"><b>Welcome </b>
+                                <asp:Label ID="lblname" runat="server"></asp:Label></span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./">My Account</a></li>
+                            <li class="divider"></li>
+                            <li><a href="ChangePassword.aspx">Change Password</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="/Default.aspx?logout=true">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <asp:Label runat="server" ID="lblempname"></asp:Label>
+        <div class="sidebar-nav sticky" id="navbarid-toggle">
+            <nav id="sidebar">
+                <div style="position: relative;">
+                    <div id="right-btn-sidebar">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn hidden-xs" onclick="fn3()" style="background-color: transparent; border-color: transparent;">
+                            <img src="/images/sidebar-img.png" alt="sidebar image" style="width: 10px;" />
+                        </button>
+                    </div>
+                </div>
+                <div class="ul-nav-div">
+                    <ul>
+                        <li id="DashboardA" visible="false" runat="server"><a href="/DashboardNew.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Dashboard</b></a>
+                        </li>
+                         <li id="DashboardI" visible="false" runat="server"><a href="/DashboardNew.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Dashboard</b></a></li>
+                         <li id="LandBank" visible="false" runat="server"><a href="/DashboardLandBank.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Land bank</b></a></li>
+                         <li id="PlotBank" visible="false" runat="server"><a href="/DashboardPlotBank.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Plot Bank</b></a></li>
+                         <li id="Approvals" visible="false" runat="server" style="display:none;"><a href="/LandAllottementApproval.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>For Approvals</b></a></li>
+                         <li id="LandApprovalsss" visible="false" runat="server"><a href="/AllotmentRequestApproval.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>For Land Allotment Approvals</b></a></li>
+                 <li id="LandApprovals" visible="false" runat="server"><a href="#" data-target=".NewwProcessLABP-menu" class="nav-header collapsed" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-cogs" aria-hidden="true"></i><b>Land Allotment & Building Plan</b><i class="fa fa-collapse"></i></a>
+                                    <ul class="NewwProcessLABP-menu nav nav-list collapse">
+
+                                         <li id="Li3" runat="server"><a href="/AllotmentRequestApproval.aspx"><span class="fa fa-caret-right"></span>Pending At You</a></li>
+                                         <li id="Li4" runat="server"><a href="/ServiceRequestUnderProcess_CMIA.aspx"><span class="fa fa-caret-right"></span>In Process</a></li>
+                                         <li id="Li5" runat="server"><a href="/ServiceRequestCompletedApp.aspx"><span class="fa fa-caret-right"></span>Approved</a></li>
+                                         <li id="Li6" runat="server"><a href="/ServiceRequestRejectedApp.aspx"><span class="fa fa-caret-right"></span>Rejected</a></li>
+                                       
+                                    </ul>
+                                </li>
+                  
+                   <li id="Li25" runat="server"><a href="#" data-target=".NewwProcessIA-menu" class="nav-header collapsed" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-cogs" aria-hidden="true"></i><b>IA Services</b><i class="fa fa-collapse"></i></a>
+                                    <ul class="NewwProcessIA-menu nav nav-list collapse">
+
+                                         <li id="Li26" runat="server"><a href="/ServiceRequestInboxIAApp.aspx"><span class="fa fa-caret-right"></span>Application Received</a></li>
+                                         <li id="Li27" runat="server"><a href="/ServiceRequestInboxIAUnderProcessApp.aspx"><span class="fa fa-caret-right"></span>In Process</a></li>
+                                         <li id="Li29" runat="server"><a href="/ServiceRequestInboxIACompletedApp.aspx"><span class="fa fa-caret-right"></span>Approved</a></li>
+                                         <li id="Li30" runat="server"><a href="/ServiceRequestInboxIARejectedApp.aspx"><span class="fa fa-caret-right"></span>Rejected</a></li>
+                                         <li id="Li31" runat="server"><a href="/ServiceRequestIAUnderObjectionApp.aspx"><span class="fa fa-caret-right"></span>Under Objections</a></li>
+                                       
+                                    </ul>
+                                </li>
+                        <li id="ActivityTracker" visible="false" runat="server"><a href="/ActivityTracker.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Activity Tracker</b></a></li>
+                        <li id="Repositories" visible="false" runat="server"><a href="/Repositories.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Repositories</b></a></li>
+                        
+                        <li id="LandAllottementCompletedDetails" visible="false"  runat="server"><a href="/LandAllottementCompletedDetails.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Land Allottement Completed Reports</b></a></li>
+                      <li id="Reports" visible="false" runat="server"><a data-target=".Master-menu" class="nav-header collapsed" data-toggle="collapse"><i class="fa fa-user-plus" aria-hidden="true"></i><b>Reports</b><i class="fa fa-collapse"></i></a>
+                            <ul class="Master-menu nav nav-list collapse" visible="false">
+                                <li id="CMDashboardReport" runat="server" visible="false"><a href="/CMDashboardReport.aspx"><span class="fa fa-caret-right"></span>CM Dashboard Report </a></li>
+                                <li id="ApplicationReportsHOMaster" visible="false" runat="server"><a href="/ApplicationReportsHOMaster.aspx" class="nav-header"><i class="fa fa-fw fa-dashboard"></i><b>Application Reports</b></a></li>
+                                <li id="ReportsIU" runat="server" visible="false"><a href="/Reports1.aspx" class="nav-header"><i class="fa fa-file" aria-hidden="true"></i><b>Reports</b></a></li>
+                            </ul>
+                        </li>
+                         <li id="Li1" runat="server"><a href="#" data-target=".Report-menu" class="nav-header collapsed" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-cogs" aria-hidden="true"></i><b>Report</b><i class="fa fa-collapse"></i></a>
+                                    <ul class="Report-menu nav nav-list collapse">
+                                         <li id="Li34" runat="server"><a href="/PendencyReportCMIANew.aspx"><span class="fa fa-caret-right"></span>NiveshMitra Application Report</a></li>
+                                           <li id="Li7" runat="server"><a href="/MISReportAllApplicationsWeakWise.aspx"><span class="fa fa-caret-right"></span>MIS Land Allotment Week Wise </a></li>
+                                           <li id="Li8" runat="server"><a href="/MISReportWeakWiseCombine.aspx"><span class="fa fa-caret-right"></span>MIS LA Week Wise Combine </a></li>
+                                        <li id="Li2" runat="server"><a href="/MISReportAllApplicationCMIA.aspx"><span class="fa fa-caret-right"></span>MIS All Applications Service Wise</a></li>
+                                            <li id="Li9" runat="server"><a href="/IAServiceReports1.aspx"><span class="fa fa-caret-right"></span>MIS Service Level Wise </a></li>
+                                    </ul>
+                                </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="content" id="mycontent">
+            <hr class="hr-main-menu" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+
+     <script type="text/javascript">
+         $(function () {
+             var match = document.cookie.match(new RegExp('color=([^;]+)'));
+             if (match) var color = match[1];
+             if (color) {
+                 $('body').removeClass(function (index, css) {
+                     return (css.match(/\btheme-\S+/g) || []).join(' ')
+                 })
+                 $('body').addClass('theme-' + color);
+             }
+
+             $('[data-popover="true"]').popover({ html: true });
+
+         });
+    </script>
+    
+
+    <script type="text/javascript">
+        $(function () {
+            var uls = $('.sidebar-nav > ul > *').clone();
+            uls.addClass('visible-xs');
+            $('#main-menu').append(uls.clone());
+        });
+    </script>
+    <script>
+        var fn3 = (function () {
+            var first = true;
+            return function () {
+                first ? fn1() : fn2();
+                first = !first;
+            }
+        })();
+        function fn1() {
+            document.getElementById("mycontent").style.marginLeft = "114px";
+        }
+        function fn2() {
+            document.getElementById("mycontent").style.marginLeft = "240px";
+        }
+        if ($(window).width() <= 768) {
+            $(this).closest('').remove();
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $("[rel=tooltip]").tooltip();
+        $(function () {
+            $('.demo-cancel-click').click(function () { return false; });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        });;
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        prm.add_endRequest(function () {
+            $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            });;
+        });
+    </script>
+
+
+
+
+
+
+    <style>
+        .act .currentPage {
+            border-left: 4px solid #8989a6;
+            overflow: hidden;
+            background: #d2d2dd;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+
+
+        $(function () {
+            var url = window.location.pathname,
+                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
+
+            //   alert(urlRegExp);
+
+            $('.sidebar-nav  ul li a').each(function () {
+                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                    //   alert(this.href.replace(/\/$/, ''));
+                    $(this).addClass('act currentPage');
+                    $(this).parent().parent(".garima").css('display', 'block');
+                    $(this).parent().parent(".garima").removeClass("collapse").addClass("collapse in").css('font-weight', 'bold');
+                    $(this).parent().parent(".garima").prev("h3").css('color', 'green');
+                    $('#content').css("min-height", $('#sideLeft').height());
+                }
+            });
+
+
+            $('.sidebar-nav ul li ul li a').each(function () {
+                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                    //     alert(this.href.replace(/\/$/, ''));
+                    $(this).parent().addClass('act currentPage');
+                    $(this).parent().parent("ul").removeClass("collapse").addClass("collapse in");
+                    $(this).addClass('act currentPage');
+                    //   $(this).parent().parent(".garima").css('display', 'block');
+                    //   $(this).parent().parent(".garima").prev("h3").find("span").removeClass("indicatorHide").addClass("indicatorShow").css('font-weight', 'bold');
+                    //   $(this).parent().parent(".garima").prev("h3").css('color', 'green');
+                    //   $('#content').css("min-height", $('#sideLeft').height());
+                }
+            });
+
+
+
+        });
+
+
+
+    </script>
+
+    <script ="javascript" type="text/javascript">
+        $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        });;
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        prm.add_endRequest(function () {
+            $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            });;
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            console.log("document ready!");
+
+            var $sticky = $('.sticky');
+            //var $stickyrStopper = $('.sticky-stopper');
+            if (!!$sticky.offset()) { // make sure ".sticky" element exists
+
+                var generalSidebarHeight = $sticky.innerHeight();
+                var stickyTop = $sticky.offset().top;
+                var stickOffset = 0;
+                //var stickyStopperPosition = $stickyrStopper.offset().top;
+                // var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
+                //var diff = stopPoint + stickOffset;
+
+                $(window).scroll(function () { // scroll event
+                    var windowTop = $(window).scrollTop(); // returns number
+
+                    //if (stopPoint < windowTop) {
+                    //  $sticky.css({ position: 'absolute', top: diff });
+                    //} else if (stickyTop < windowTop + stickOffset) {
+                    if (stickyTop < windowTop + stickOffset) {
+                        $sticky.css({ position: 'fixed', top: stickOffset });
+                    } else {
+                        $sticky.css({ position: 'absolute', top: 'initial' });
+                    }
+                });
+
+            }
+            /*if ($(window).width() < 768) {
+                var div = document.getElementById("sidebar");
+                if (div) {
+                    div.setAttribute("id", "sidebarb");
+                }
+            }*/
+        });
+
+    </script>
+    <script type="text/javascript">
+        function mytarFunction() {
+            var curr = document.getElementById("navbarid-toggle");
+            if (curr.style.display == 'block') {
+                curr.style.display = 'none';
+            }
+            else {
+                curr.style.display = 'block';
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        }); ;
+
+        $(".date1").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd MM yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        }); ;
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        prm.add_endRequest(function () {
+            $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            }); ;
+            $(".date1").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd MM yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            }); ;
+        });
+    </script>
+   <%-- <script type="text/javascript">
+     function DisableBackButton() {
+       window.history.forward()
+      }
+     DisableBackButton();
+     window.onload = DisableBackButton;
+     window.onpageshow = function(evt) { if (evt.persisted) DisableBackButton() }
+     window.onunload = function() { void (0) }
+ </script>--%>
+</body>
+</html>
+

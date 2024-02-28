@@ -1,0 +1,199 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+    .request-table tr {
+        font-size: 15px;
+        color: #2d2d2d;
+        border: 1px solid #fff !important;
+        text-align: left;
+        font-weight: 600;
+        background: #e0e0e0;
+        padding: 1px 6px !important;
+    }
+
+        .request-table tr th {
+            font-size: 15px;
+            background-color: #ffe600;
+        }
+
+        .request-table tr td a {
+            color: #337ab7;
+            font-weight: bold;
+        }
+
+    .div-report .hide_me {
+        display: none;
+    }
+
+    .header-ul li {
+        list-style-type: none;
+    }
+
+    .header-ul {
+        list-style-type: none;
+    }
+
+    ol li {
+        font-weight: normal
+    }
+
+        ol li span {
+            font-weight: normal
+        }
+</style>
+<link type="text/css" rel="stylesheet" href="css/theme.css" />
+<div id="Buildingletter" style="padding: 10px 10px; margin: 5px 5px; font-family: Segoe UI, Helvetica, Calibri; background:#fff;">
+    <div class="div-report" runat="server">
+        <div class="row">
+            <div class="div-4col" style="float:left;width:33%;">
+                <b style="font-weight:700; font-size:20px">U.P. State Industrial  Development Corporation Ltd.</b>
+                <br />
+                <br />
+
+            </div>
+
+            <div class="div-4col" style="width: 30%; float: left; text-align:center">
+                <img src="http://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none; height: 56px; margin-bottom:0;" />
+            </div>
+            <div class="div-4col text-left" style="width: 36%; float: left;">
+                <style>
+                    .header-ul li {
+                        list-style-type: none;
+                    }
+
+                    .header-ul {
+                        list-style-type: none;
+                    }
+                </style>
+                <ul class="list-unstyled header-ul pull-right" style="float:right;">
+                    <li><b><span>{{RegionalOffice}}</span></b></li>
+                    <li><b>UPSIDC</b></li>
+                    <li><b><span>{{OfficeAddress1}}</span></b></li>
+                    <li><b><span>{{OfficeAddress2}}</span></b></li>
+                    <li><b>Tel No. : <span>{{TelNo}}</span></b></li>
+                    <li><b>Email ID: <span>{{EmailId}}</span></b></li>
+                    <li><b>Website: www.onlineupsidc.com</b></li>
+
+
+                </ul>
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div style="border-bottom: 3px solid #ffc511;">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+            <div class="div-4col" style="width:70%; float:left"><b>Ref.No:</b><span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span><b>/SIDC-IA/</b><span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></div>
+            <div class="div-4col" style="width:30%; float:left"><span style="float:right;"><b>Date:</b><span class="myultext"><span class="PreviewClass">{{IssueDate}}</span></span></span></div><br />
+            <div class="div-4col" style="width:60%; float:left">
+                <p><b>To,</b></p>
+                <ul style="list-style-type:none">
+                    <li><span class="myultext"><span class="PreviewClass">{{AllotteeName}}</span></span></li>
+                    <li><span class="myultext"><span class="PreviewClass">{{Address}}</span></span></li>
+                </ul>
+            </div>
+            <div class="div-4col" style="width:40%; float:left">
+                <img src="{{QRC}}" width="150" height="150" style="float:right;">
+                <!--<img src="barcode.jpg" style="width: 145px;float: right;" />-->
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+
+            <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                <p><b>Subject:- restoration of the plot: <span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span> at I.A. <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></p></b>
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <div class="div-12col" style="width:100%; float:left">Dear Sir/Madam,</div>
+
+            <div class="div-12col" style="width:100%; float:left">
+                <div class="div-12col" style="width:100%; float:left">
+                    <p style="text-align:justify; line-height:28px">
+                        With  reference to your   Application No  <b><span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span></b> dated <b><span class="myultext"><span class="PreviewClass">{{ApplicationDate}}</span></span></b>
+                        regarding restoration of  Plot Number <span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span> at I.A. <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span>
+                    </p></b>
+                    In this context, we are pleased to inform you that we are willing to restore the allotment of the above plot to you, interalia, on the following terms and conditions :-
+                    </p>
+                </div>
+                <ol class="" style="float:left;padding-left:32px;">
+                    <li style="text-align:justify">
+                        The date of allotment will be the same  as per the original allotment letter.
+                    </li>
+
+                    <li style="text-align:justify">
+                        The premium for the plot will remain the same as under the original lease deed/allotment letter in your favour. However the entire outstanding dues against the cancelled plot up to the date of restoration will have to be paid within TEN DAYS of date of this letter
+                    </li>
+                    <li style="text-align:justify">
+                        <div class="clearfix"></div>
+                        <br />
+                        <span class="BP" style="font-size:12px;">{{Listofoutstandingdues}}</span>
+
+                        The balance  dues in respect of the plot i.e. <!--Rs.  <b>
+                            <b><span class="PreviewClass lblTotalLevyamount">{{lblTotalDuesamount}}</span></b>
+                        </b> will be payable in lump sum or in <b><span class="PreviewClass lblTotalLevyamount">{{lblTotalInstallment}}</span></b> half yearly installments with interest prevailing at the time of  restoration.
+                        The current rate of  interest is @ <b><span class="myultext"><span class="PreviewClass lblInterestPerAnnum">{{lblInterestPerAnnum}}</span></span></b> % p.a.-->
+                    </li>
+                    <li style="text-align:justify">
+                        You shall pay  restoration levy amounting to Rs.<b><span class="PreviewClass lblTotalLevyamount">{{lblTotalrestorationlevyamount}}</span></b>.Which shall be <b><span class="PreviewClass lblTotalLevyamount">{{Restorationlevypercentage}}</span></b> of the prevailing  premium of Rs.<b><span class="PreviewClass lblTotalLevyamount">{{RateofPlot}}</span></b> per sqmtrs.) You would be liable to pay 25% amount of restoration levy before restoration of plot & in any case
+                        within 30 DAYS from the respect of this letter and balance restoration levy shall be paid in 06 half yearly installments along with interest @14% or interest applicable on the date of restoration .First of such installments shall fall due for payment on 1st July/1st January..
+                    </li>
+                    <li style="text-align:justify">
+                        After restoration, you have to execute lease deed and take over possession of the plot within   30 days from the date of restoration .
+                    </li>
+                    <li style="text-align:justify">
+                        Transfer of the plot  under vacant condition  shall not be permitted in any condition.
+                    </li>
+                    <li style="text-align:justify">
+                        You will commence the construction of factory building within a period of 03 months or by <b><span class="PreviewClass lblTotalLevyamount">{{buildingPlanDate}}</span></b> and will complete the construction of the factory building on the plot to the satisfaction of the corporation and commence production within 2 Year of dispatch of this letter No further time shall be given.
+                    </li>
+                    <li style="text-align:justify">
+                        If you fail to take effective steps within the stipulated period to setup your unit, the allotment of the plot would be liable to be cancelled once again.
+                    </li>
+                    <li style="text-align:justify">
+                        You will obtain necessary approval of State effluent Board, UP Pollution and Prevention Control Board and such other authorities which may be prescribed by law to regulate Treatment and disposal of effluents gaseous, liquid or solid.
+                    </li>
+                    <li style="text-align:justify">
+                        You will have to get building plans of your factory building approved by competent authority within ONE MONTHS from the date of execution of lease  deed.
+                    </li>
+                    <li style="text-align:justify">
+                        You will have to get building plans of your factory building approved by competent authority within ONE MONTHS from the date of execution of lease  deed.
+                        If the above offer is acceptable to you, please confirm the same in writing to us along with required remittance of dues and levy within 10 days from the date of receipt of this letter and take further action accordingly.
+                        In case we do not receive the above confirmation with remittance of dues and levy within the stipulated period, this offer stands automatically withdrawn without any further correspondence with you in this regard.
+
+                    </li>
+                    Note:-If any dues  is found to recoverable from you in future the same shall be payble by you as per demand and binding upon you may be noted .
+                </ol>
+
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <span class="BP" style="font-size:12px;">{{ListofAnnexresBP}}</span>
+            <div class="clearfix"></div>
+            <br /><br />
+            <div class="div-12col text-right" style="width:100%; float:left;">
+                <ul class="list-unstyled" style="list-style-type:none; text-align:right">
+                    <li>
+                        <b style="margin-right: 60px;">Your's faithfully,</b>
+                    </li>
+                    <li><b>For U.P. STATE INDL. DEV. CORPN. LTD.</b></li>
+                    </br>
+                    <li><b style="margin-right: 40px;"><span class="myultext"><span class="PreviewClass">{{RMName}}</span></span></b></li>
+                    <li><b style="margin-right: 40px;">(Regional Manager)</b></li>
+                </ul>
+            </div>
+            <div class="div-12col" style="border-bottom: 3px solid #ffc511; width:auto">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div class="div-12col" style="width:100%;">
+                <ul class="text-center" style="list-style-type:none; text-align:center">
+                    <li><b> U.P. STATE INDUSTRIAL DEVELOPMENT CORPORATION Ltd.</b></li>
+                    <li><b>CIN No - U26960UP1961SGC002834, Head Office, Kanpur</b></li>
+                    <li><b>A-1/4, Lakhanpur, Kanpur-208024</b></li>
+                    <li><b>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</b></li>
+                    <li><b>Website:- www.onlineupsidc.com</b></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

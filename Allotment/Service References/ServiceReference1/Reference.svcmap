@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f0da99c9-0910-4f34-b09d-af971c233a4d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+
+  <!--Comment By Sunil -->
+  <!--
+  <MetadataSources>
+    <MetadataSource Address="http://niveshmitra.up.nic.in/upswp_niveshmitraservices.asmx" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="upswp_niveshmitraservices.wsdl" MetadataType="Wsdl" ID="00edf390-49e3-4b95-bc6e-d64054b8c3b5" SourceId="1" SourceUrl="http://niveshmitra.up.nic.in/upswp_niveshmitraservices.asmx?wsdl" />
+    <MetadataFile FileName="upswp_niveshmitraservices.disco" MetadataType="Disco" ID="44521183-daad-4ac7-86bb-dccb768ff458" SourceId="1" SourceUrl="http://niveshmitra.up.nic.in/upswp_niveshmitraservices.asmx?disco" />
+  </Metadata>
+  -->
+  <MetadataSources>
+    <MetadataSource Address="http://72.167.225.87/nivesh/upswp_niveshmitraservices.asmx" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="upswp_niveshmitraservices.wsdl" MetadataType="Wsdl" ID="00edf390-49e3-4b95-bc6e-d64054b8c3b5" SourceId="1" SourceUrl="http://72.167.225.87/nivesh/upswp_niveshmitraservices.asmx?wsdl" />
+    <MetadataFile FileName="upswp_niveshmitraservices.disco" MetadataType="Disco" ID="44521183-daad-4ac7-86bb-dccb768ff458" SourceId="1" SourceUrl="http://72.167.225.87/nivesh/upswp_niveshmitraservices.asmx?disco" />
+  </Metadata>
+  
+  <!--Comment By Sunil -->
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

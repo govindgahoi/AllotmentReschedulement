@@ -1,0 +1,183 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+    .request-table tr {
+        font-size: 15px;
+        color: #2d2d2d;
+        border: 1px solid #fff !important;
+        text-align: left;
+        font-weight: 600;
+        background: #e0e0e0;
+        padding: 1px 6px !important;
+    }
+
+        .request-table tr th {
+            font-size: 15px;
+            background-color: #ffe600;
+        }
+
+        .request-table tr td a {
+            color: #337ab7;
+            font-weight: bold;
+        }
+
+    .div-report .hide_me {
+        display: none;
+    }
+
+    .header-ul li {
+        list-style-type: none;
+    }
+
+    .header-ul {
+        list-style-type: none;
+    }
+
+    ol li {
+        font-weight: bold
+    }
+
+        ol li span {
+            font-weight: normal
+        }
+</style>
+<link type="text/css" rel="stylesheet" href="css/theme.css" />
+<div id="Buildingletter" style="padding: 10px 10px; margin: 5px 5px; font-family: Segoe UI, Helvetica, Calibri; background:#fff;">
+    <div class="div-report" runat="server">
+        <div class="row">
+            <div class="div-4col" style="float:left;width:33%;">
+                <b style="font-weight:700; font-size:20px">U.P. State Industrial  Development Corporation Ltd.</b>
+                <br />
+                <br />
+
+            </div>
+
+            <div class="div-4col" style="width: 30%; float: left; text-align:center">
+                <img src="http://eservices.onlineupsidc.com/images/upsidclogo.png" class="header-logo" style="border-top: none; height: 56px; margin-bottom:0;" />
+            </div>
+            <div class="div-4col text-left" style="width: 36%; float: left;">
+                <style>
+                    .header-ul li {
+                        list-style-type: none;
+                    }
+
+                    .header-ul {
+                        list-style-type: none;
+                    }
+                </style>
+                <ul class="list-unstyled header-ul pull-right" style="float:right;">
+                    <li><b><span>{{RegionalOffice}}</span></b></li>
+                    <li><b>UPSIDC</b></li>
+                    <li><b><span>{{OfficeAddress1}}</span></b></li>
+                    <li><b><span>{{OfficeAddress2}}</span></b></li>
+                    <li><b>Tel No. : <span>{{TelNo}}</span></b></li>
+                    <li><b>Email ID: <span>{{EmailId}}</span></b></li>
+                    <li><b>Website: www.onlineupsidc.com</b></li>
+
+
+                </ul>
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div style="border-bottom: 3px solid #ffc511;">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+            <div class="div-4col" style="width:70%; float:left"><b>Ref.No:</b><span class="myultext"><span class="PreviewClass">{{RefNo}}</span></span><b>/SIDC-IA/</b><span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></div>
+            <div class="div-4col" style="width:30%; float:left"><span style="float:right;"><b>Date:</b><span class="myultext"><span class="PreviewClass">{{IssueDate}}</span></span></span></div><br />
+            <div class="div-4col" style="width:60%; float:left">
+                <p><b>To,</b></p>
+                <ul style="list-style-type:none">
+                    <li><span class="myultext"><span class="PreviewClass">{{NewAllotteeName}}</span></span></li>
+                    <li><span class="myultext"><span class="PreviewClass">{{Address}}</span></span></li>
+                </ul>
+            </div>
+            <div class="div-4col" style="width:40%; float:left">
+                <img src="{{QRC}}" width="150" height="150" style="float:right;">
+                <!--<img src="barcode.jpg" style="width: 145px;float: right;" />-->
+            </div>
+            <div class="clearfix" style="clear:both;"></div>
+            <br />
+
+            <div class="div-12col" style="width:100%;  background:#fbfbfb; float:left; text-align:left">
+                <p><b>Subject:- Recognition of the Legal Heir  Approval for Plot No: <span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span> at I.A. <span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></p></b>
+            </div>
+            <div class="clearfix"></div>
+            <br />
+            <div class="div-12col" style="width:100%; float:left">Dear Sir/Madam,</div>
+
+            <div class="div-12col" style="width:100%; float:left">
+                <p style="text-align:justify; line-height:28px">
+                    Please refer to your application dated:  <b><span class="myultext"><span class="PreviewClass">{{ApplicationDate}}</span></span></b> through which you have applied for the
+                    Recognition of the Legal Heir for the plot no. <b><span class="myultext"><span class="PreviewClass">{{PlotNo}}</span></span></b> at I.A. <b><span class="myultext"><span class="PreviewClass">{{IAName}}</span></span></b>.
+                    Through which Legal Heir of  <b><span class="myultext"><span class="PreviewClass">{{AllotteeName}}</span></span></b> has request for reconstitution in favour of  <b><span class="myultext"><span class="PreviewClass">{{NewAllotteeName}}</span></span></b>
+                    for the approved project  <b><span class="myultext"><span class="PreviewClass">{{ProjectName}}</span></span></b> with refernce to subject mention above we here by inform you that as per your request and the supported document submitted the authority here by approve the recognition of <b><span class="myultext"><span class="PreviewClass">{{NewAllotteeName}}</span></span></b> as Legal Heir
+                    the term & condition are as below:-
+                </p>
+            </div>
+            <style>
+            </style>
+            <div class="clearfix" style="clear:both;"></div>
+
+            <div class="div-12col" style="width:100%;">
+                <ul style="float:left; list-style-type:decimal">
+                    <li style="text-align:justify; line-height:28px">
+                        All the other term Condition of plot allotment will be as per land allotment latter No. <b><span class="myultext"><span class="PreviewClass">{{AllotmentNo}}</span></span></b> dated: <b><span class="myultext"><span class="PreviewClass">{{AllotmentDate}}</span></span></b>.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                        Any due on the plot will be payable within 30 day by  <b><span class="myultext"><span class="PreviewClass">{{NewAllotteeName}}</span></span></b> as an when demanded as per authority rule and regulation.
+                    </li>
+                    <li style="text-align:justify; line-height:28px">
+                       	The reconstitution in favour of Legal Heir has been done on your request and on the basis of document submitted by you in case of any dispute authority will not be responsible for it all the responsibility will be solely for the allottee.
+                    </li>
+                    
+                    <li style="text-align:justify; line-height:28px">
+                        <b><span class="myultext"><span class="PreviewClass">{{NewAllotteeName}}</span></span></b> will not be entitled for any changes without the approval of the authority.
+                    </li>
+
+                    {{AdditionalClause}}
+
+                    <li style="text-align:justify; line-height:28px">
+                       	You are requested to submit an undertaking acceptance all the above condition within 07 days and initiate the process in the time bound manner.
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+
+            <br />
+
+            <span class="BP" style="font-size:12px;">{{ListofAnnexresBP}}</span>
+
+            <div class="clearfix"></div>
+            <br /><br />
+
+            <div class="div-12col text-right" style="width:100%; float:left;">
+                <ul class="list-unstyled" style="list-style-type:none; text-align:right">
+                    <li>
+                        <b style="margin-right: 60px;">Your's faithfully,</b>
+                    </li>
+                    <li><b>For U.P. STATE INDL. DEV. CORPN. LTD.</b></li>
+                    </br>
+                    <li><b style="margin-right: 40px;"><span class="myultext"><span class="PreviewClass">{{RMName}}</span></span></b></li>
+                    <!--<li><b style="margin-right: 40px;">(ATP Incharge)</b></li>-->
+                </ul>
+            </div>
+
+            <div class="div-12col" style="border-bottom: 3px solid #ffc511; width:auto">&nbsp;</div>
+            <div class="clearfix" style="clear:both;"></div>
+            <div class="div-12col" style="width:100%;">
+                <ul class="text-center" style="list-style-type:none; text-align:center">
+                    <li><b> U.P. STATE INDUSTRIAL DEVELOPMENT CORPORATION Ltd.</b></li>
+                    <li><b>CIN No - U26960UP1961SGC002834, Head Office, Kanpur</b></li>
+                    <li><b>A-1/4, Lakhanpur, Kanpur-208024</b></li>
+                    <li><b>Telephone No-0512-2582851-53(PBX), Fax No.-0512-2580797</b></li>
+                    <li><b>Website:- www.onlineupsidc.com</b></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

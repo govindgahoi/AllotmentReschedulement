@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="http://eservices.onlineupsidc.com/mail.css" rel="stylesheet" />
+</head>
+<body>
+    <style>
+        body {
+            margin: 0 25px;
+            font-family: Segoe UI, Helvetica, Calibri !important;
+            font-size: 13px !important;
+        }
+
+        .header-logo {
+            height: 70px;
+            margin-bottom: 6px;
+        }
+
+        .div40-right .text-right {
+            margin-top: 2px;
+        }
+
+        .div60-left {
+            width: 60%;
+            float: left;
+        }
+
+        .div40-right {
+            width: 40%;
+            float: left;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+    <br>
+    <div class="clearfix" style="clear:both;"></div>
+    <div class="div60-left" style="width: 60%;float: left;">
+        <img src="http://eservices.onlineupsidc.com/images/upsidc-logo1.png" class="header-logo" style="border-top:none;height:60px;" />
+    </div>
+    <div class="div40-right" style="width: 40%;float: left;">
+        <div class="text-right" style="float:right;"><strong>UPSIDC Complex,<br> A-1/4 Lakhanpur,<br>Kanpur-208024</strong></div>
+    </div>
+    <div class="clearfix" style="clear:both;"></div>
+    <div style="border-top:3px solid #22BCE5">&nbsp;</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <div class="row p-5">
+
+                            <span style="font-family:Arial;font-size:10pt">
+                                Dear <b>{AllotteeName}</b>,<br /><br />
+                                This is a reminder that your payment is due under OTS Scheme.<br /> 
+                                Please pay before the<b> due date-{DueDate}</b> to avail the benefit of the scheme.<br /><br />
+                                Email : {emailID}<br />
+                                Phone Number : {contactNo} <br />
+                            </span>
+                        </div>
+                        <hr class="my-5">
+
+                        <div class="row p-5">
+                            <div class="col-md-12">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <!--<th class="border-0 text-uppercase small font-weight-bold">S.No</th>-->
+                                            <th class="border-0 text-uppercase small font-weight-bold">Title</th>
+                                            <th class="border-0 text-uppercase small font-weight-bold">Amount</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <!-- <td>1.</td>-->
+                                            <td>Total Dues :</td>
+                                            <td style="color:red">{TotalDues}</td>
+
+                                        </tr>
+                                        <tr>
+                                            <!--<td>2.</td>-->
+                                            <td>50% waiver in interest under OTS Scheme :</td>
+                                            <td style="color:green">{Waiver}</td>
+
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>3.</td>-->
+                                            <td>PAYABLE AMOUNT :</td>
+                                            <td>{PayableAmount}</td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <hr class="my-5">
+                            <div class="col-md-12">
+                                <table class="table table-responsive table-hover table-bordered table-myspacing-top">
+                                    <thead>
+                                        <tr>
+                                            <td class="border-0 text-uppercase small font-weight-bold"><b>Payable</b></td>
+                                            <td class="border-0 text-uppercase small font-weight-bold"><b>Amount</b></td>
+                                            <td class="border-0 text-uppercase small font-weight-bold"><b>Status</b></td>
+                                            <td class="border-0 text-uppercase small font-weight-bold"><b>Date</b></td>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Down Payment&nbsp;</td>
+                                            <td>{DownPaymentAmount}&nbsp;</td>
+                                            <td>{lblDownPaymentStatus}&nbsp;</td>
+                                            <td>{lblDownPaymentDate}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1st Instalment&nbsp;</td>
+                                            <td>{lblFirstInstalmentAmount}&nbsp;</td>
+                                            <td>{lblFirstStatus}&nbsp;</td>
+                                            <td>{lblFirstInstDate}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2nd Instalment&nbsp;</td>
+                                            <td>{lblSecInstalmentAmount}&nbsp;</td>
+                                            <td>{lblSecStatus}&nbsp;</td>
+                                            <td>{lblSecInstDate}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3rd Instalment&nbsp;</td>
+                                            <td>{lblThirdInstalmentAmount}&nbsp;</td>
+                                            <td>{lblThirdStatus}&nbsp;</td>
+                                            <td>{lblThirdInstDate}&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr class="my-5">
+                        <div class="row p-5">
+                            <span style="color:red">*</span>OTS scheme is valid till 20th feb 2022.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+            <span style="font-family:Arial;font-size:10pt">
+                Thanks<br />
+                UPSIDA eService Customer Care
+            </span>
+        </div>
+    </div>
+    <br />
+    <div style="border-top:3px solid #22BCE5">&nbsp;</div>
+    <div class="mail-disclaimer">
+        <p class="text-justify">
+            <strong>Disclaimer:</strong> The information contained in this communication is intended solely for the use of the individual or entity to whom it is addressed and others authorized to receive it. It may contain confidential or legally privileged information. If you are not the intended recipient you are hereby notified that any disclosure, copying, distribution or taking any action in reliance on the contents of this information is strictly prohibited and may be unlawful. If you have received this communication in error, please notify us immediately by responding to this email and then delete it from your system. The firm is neither liable for the proper and complete transmission of the information contained in this communication nor for any delay in its receipt.
+            “This is an auto-generated email and reply to this mail id is not monitored. In case of any query please contact us at info@upsidc.com.
+        </p>
+    </div>
+
+</body>
+</html>

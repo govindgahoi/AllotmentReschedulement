@@ -1,0 +1,1176 @@
+
+/*---------------------------Button Css customized-------------------------------------*/
+.login {
+    border: none;
+    background-color: #171188;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.signup {
+    border: none;
+    background-color: #171188;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.forget {
+    border: none;
+    background-color: #171188;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.save {
+    border: none;
+    background-color: #171188;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.submit {
+    border: none;
+    background-color: #171188;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.cancel {
+    border: none;
+    background-color: #d5d4e6;
+    color: #000000;
+    padding: 8px 22px;
+    border-radius: 6px;
+    height: 36px;
+    margin: 6px 6px;
+}
+
+.reset {
+    border: none;
+    background-color: #d5d4e6;
+    color: #000000;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.edit {
+    border: none;
+    background-color: #171188;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.update {
+    border: none;
+    background-color: #198754;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.delete {
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.approve {
+    border: none;
+    background-color: #198754;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.reject {
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.no {
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.yes {
+    border: none;
+    background-color: #198754;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.alert {
+    border: none;
+    background-color: #ffc107;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.pending {
+    border: none;
+    background-color: #ffc107;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.view {
+    border: none;
+    background-color: #198754;
+    color: white;
+    padding: 6px 22px;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+
+.round-btn-green {
+    color: #fefefe !important;
+    float: left;
+    font-weight: bold;
+    line-height: 15px;
+    height: 50px;
+    font-size: 27px;
+    width: 50px;
+    background: none;
+    text-align: center;
+    padding: 11px;
+    background-color: #209509;
+    border-radius: 33px;
+    text-decoration: none;
+}
+
+.round-btn-red {
+    color: #fefefe !important;
+    float: left;
+    font-weight: bold;
+    line-height: 30px;
+    height: 50px;
+    font-size: 17px;
+    width: 50px;
+    text-align: center;
+    background: none;
+    padding: 11px;
+    background-color: #006699;
+    border-radius: 33px;
+    text-decoration: none;
+}
+
+.popup-close-btn {
+    color: #fefefe !important;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 15px;
+    height: 50px;
+    width: 50px;
+    background: none;
+    padding: 6px;
+    background-color: #209509;
+    border-radius: 33px;
+    text-decoration: none;
+}
+
+    .popup-close-btn i {
+        color: #fefefe !important;
+    }
+/*---------------------------------------hover btn start----------------------------------------*/
+.login:hover {
+    color: white;
+}
+
+.signup:hover {
+    color: white;
+}
+
+.forget:hover {
+    color: white;
+}
+
+.save:hover {
+    color: white;
+}
+
+.submit:hover {
+    color: white;
+}
+
+.cancel:hover {
+    color: #000000;
+}
+
+.reset:hover {
+    color: #000000;
+}
+
+.edit:hover {
+    color: white;
+}
+
+.update:hover {
+    color: white;
+}
+
+.delete:hover {
+    color: white;
+}
+
+.approve:hover {
+    color: white;
+}
+
+.reject:hover {
+    color: white;
+}
+
+.no:hover {
+    color: white;
+}
+
+.yes:hover {
+    color: white;
+}
+
+.alert:hover {
+    color: white;
+}
+
+.pending:hover {
+    color: white;
+}
+
+.view:hover {
+    color: white;
+}
+
+.round-btn-green:hover {
+    color: #fefefe !important;
+}
+
+.round-btn-red:hover {
+    color: #fefefe !important;
+}
+
+.popup-close-btn:hover {
+    color: #fefefe !important;
+}
+
+.popup-close-btn i:hover {
+    color: #fefefe !important;
+}
+/*---------------------------------------hover btn End----------------------------------------*/
+/*---------------------------Button customized Css End-------------------------------------*/
+
+/*---------------------------Gridview table css start-------------------------------------*/
+
+.mGrid2 {
+    width: 100%;
+    background-color: #fff !important;
+    margin: 6px auto 0;
+    border: none !important;
+    border-collapse: collapse;
+    font: 9px Tahoma !important;
+}
+
+    .mGrid2 tr {
+        color: #717171 !important;
+        padding-left: 10px !important;
+        font-size: 14px !important;
+        color: #012638 !important;
+        /*background: rgba(49, 176, 213, 0.14) !important;*/
+    }
+
+        .mGrid2 tr:hover {
+            background: rgb(191 195 197 / 46%) !important;
+        }
+
+        .mGrid2 tr:nth-child(2n) {
+            background: #fff !important;
+        }
+
+    .mGrid2 td {
+        max-width: 200px;
+        /*white-space:pre-wrap;*/
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #d7caca;
+        padding: 6px 4px !important;
+        font-size: 14px !important;
+        color: #000000 !important;
+        text-align: center;
+    }
+
+        .mGrid2 td span {
+            color: black;
+        }
+
+        .mGrid2 td .status {
+            color: white;
+            padding: 6px 10px;
+        }
+
+        .mGrid2 td span i {
+            border: none;
+            background-color: #198754;
+            color: white;
+            border-radius: 6px;
+        }
+
+        .mGrid2 td label {
+            padding: 6px 4px !important;
+            padding: 8px 8px;
+        }
+
+
+    .mGrid2 th {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #ffffff !important;
+        background: #0c0c66 !important;
+        font-size: 14px !important;
+        line-height: 21px !important;
+        padding: 7px 4px !important;
+        border: 1px solid;
+        text-align: center;
+    }
+
+    .mGrid2 a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px !important;
+        color: #0d6efd;
+    }
+
+        .mGrid2 a:hover {
+            color: #006600;
+        }
+
+    .mGrid2 input[type='text'] {
+        display: block;
+        width: 100%;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .mGrid2 input:disabled {
+        background-color: #e9ecef;
+        opacity: 1;
+    }
+
+    .mGrid2 input[type='checkbox'] {
+        width: 1em;
+        text-align: center;
+        height: 1em;
+        margin-right: 5px;
+    }
+
+    .mGrid2 input[type='checkbox'] {
+        width: 1em;
+        text-align: center;
+        height: 1em;
+        margin-right: 5px;
+    }
+
+        .mGrid2 input[type='checkbox']:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+    .mGrid2 input[type='radio'] {
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.25em;
+        margin-right: 5px;
+        border: 1px solid rgba(0,0,0,.25);
+    }
+
+        .mGrid2 input[type='radio']:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+    .mGrid2 input[type='search'] {
+        display: block;
+        width: 100%;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+        .mGrid2 input[type='search']:focus, .mGrid2 input[type='text']:focus, .mGrid2 input[type='email']:focus, .mGrid2 input[type='password']:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #86b7fe;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+        }
+
+    .mGrid2 input[type='image'] {
+        width: 39px;
+        padding: 6px 11px;
+        border: none;
+        color: white;
+        background-color: #05701c;
+        border-radius: 10px;
+    }
+
+    .mGrid2 select {
+        display: block;
+        width: 100%;
+        padding: 6px 5px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        border: 1px solid #ced4da;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+        .mGrid2 select:focus {
+            display: block;
+            width: 100%;
+            padding: 6px 5px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        .mGrid2 select:disabled {
+            background-color: #e9ecef;
+            opacity: 0.6;
+        }
+
+    .mGrid2 textarea {
+        display: block;
+        width: 100%;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+        .mGrid2 textarea:focus {
+            display: block;
+            width: 100%;
+            padding: 4px 6px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border-radius: 0.375rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+    .mGrid2 input[type='file'] {
+        display: block;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .mGrid2 input[type='date'], input[type='datetime'] {
+        display: block;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000000;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .mGrid2 input[type='email'], .mGrid2 input[type='password'] {
+        display: block;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000000;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .mGrid2 input[type='submit'] {
+        border: none;
+        background-color: #171188;
+        color: white;
+        padding: 6px 22px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .save {
+        border: none;
+        background-color: #171188;
+        color: white;
+        padding: 6px 6px;
+        border-radius: 6px;
+        margin: 4px 4px;
+    }
+
+        .mGrid2 .save:hover {
+            border: none;
+            background-color: #171188;
+            color: white;
+            padding: 6px 6px;
+            border-radius: 6px;
+            margin: 4px 4px;
+        }
+
+    .mGrid2 .submit {
+        border: none;
+        background-color: #171188;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .cancel {
+        border: none;
+        background-color: #d5d4e6;
+        color: #000000;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .reset {
+        border: none;
+        background-color: #d5d4e6;
+        color: #000000;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .edit {
+        border: none;
+        background-color: #171188;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .update {
+        border: none;
+        background-color: #198754;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .delete {
+        border: none;
+        background-color: #dc3545;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .approve {
+        border: none;
+        background-color: #198754;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 4px 4px;
+    }
+
+        .mGrid2 .approve:hover {
+            border: none;
+            background-color: #198754;
+            color: white;
+            padding: 6px 8px;
+            border-radius: 6px;
+            margin: 4px 4px;
+        }
+
+    .mGrid2 .reject {
+        border: none;
+        background-color: #dc3545;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .no {
+        border: none;
+        background-color: #dc3545;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .yes {
+        border: none;
+        background-color: #198754;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .alert {
+        border: none;
+        background-color: #ffc107;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .pending {
+        border: none;
+        background-color: #ffc107;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mGrid2 .view {
+        border: none;
+        background-color: #198754;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 6px;
+        margin: 0px 6px;
+    }
+/*------------------>Grid table redio button list start---------------------------------------------*/
+.parent-table .mGrid2{
+    width:auto;
+    background-color: #fff !important;
+    margin:0px;
+    border: none !important;
+    border-collapse: collapse;
+    font: 9px Tahoma !important;
+}
+.parent-table .mGrid2 td{
+    max-width: 200px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border:none;
+    padding: 0px 10px !important;
+    font-size: 14px !important;
+    color: #000000 !important;
+    text-align: left;
+}
+/*------------------Grid table redio button list End---------------------------------------------*/
+
+/*---------------------------Gridview table css End-------------------------------------*/
+
+
+/*--------------------------- table css start-------------------------------------------*/
+.mytable2 {
+    width: 100%;
+    background-color: #fff !important;
+    margin: 6px auto 0;
+    border: none !important;
+    border-collapse: collapse;
+    font: 9px Tahoma !important;
+}
+
+    .mytable2 tr {
+        color: #717171 !important;
+        padding-left: 10px !important;
+        font-size: 14px !important;
+        color: #012638 !important;
+    }
+
+        .mytable2 tr:hover {
+            background: rgb(191 195 197 / 46%) !important;
+        }
+
+        .mytable2 tr:nth-child(2n) {
+            background: #fff !important;
+        }
+
+    .mytable2 td {
+        max-width: 200px;
+        /*white-space: nowrap;*/
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #d7caca;
+        padding: 4px 4px !important;
+        font-size: 14px !important;
+        color: #000000 !important;
+        text-align: center;
+    }
+
+        .mytable2 td span {
+            color: black;
+            padding: 4px 4px;
+        }
+
+        .mytable2 td .status {
+            color: white;
+            padding: 6px 10px;
+        }
+
+        .mytable2 td span i {
+            border: none;
+            background-color: #198754;
+            color: white;
+            padding: 0px;
+            border-radius: 6px;
+            margin: 6px 6px;
+        }
+
+        .mytable2 td label {
+            padding: 6px 4px !important;
+            padding: 8px 8px;
+        }
+
+
+    .mytable2 th {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #ffffff !important;
+        background: #0c0c66 !important;
+        font-size: 14px !important;
+        line-height: 21px !important;
+        padding: 7px 4px !important;
+        border: 1px solid;
+        text-align: center;
+    }
+
+    .mytable2 a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px !important;
+        color: #0d6efd;
+    }
+
+        .mytable2 a:hover {
+            color: #006600;
+        }
+
+    .mytable2 input[type='text'] {
+        display: block;
+        width: 100%;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .mytable2 input:disabled {
+        background-color: #e9ecef;
+        opacity: 1;
+    }
+
+    .mytable2 input[type='checkbox'] {
+        width: 1em;
+        text-align: center;
+        height: 1em;
+        margin-right: 5px;
+    }
+
+    .mytable2 input[type='checkbox'] {
+        width: 1em;
+        text-align: center;
+        height: 1em;
+        margin-right: 5px;
+    }
+
+        .mytable2 input[type='checkbox']:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+    .mytable2 input[type='radio'] {
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.25em;
+        margin-right: 5px;
+        border: 1px solid rgba(0,0,0,.25);
+    }
+
+        .mytable2 input[type='radio']:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+    .mytable2 input[type='search'] {
+        display: block;
+        width: 100%;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+        .mytable2 input[type='search']:focus, .mytable2 input[type='text']:focus, .mytable2 input[type='email']:focus, .mytable2 input[type='password']:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #86b7fe;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+        }
+
+    .mytable2 input[type='image'] {
+        width: 39px;
+        padding: 6px 11px;
+        border: none;
+        color: white;
+        background-color: #05701c;
+        border-radius: 10px;
+    }
+
+    .mytable2 select {
+        display: block;
+        width: 100%;
+        padding: 6px 5px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        border: 1px solid #ced4da;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+        .mytable2 select:focus {
+            display: block;
+            width: 100%;
+            padding: 6px 5px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        .mytable2 select:disabled {
+            background-color: #e9ecef;
+            opacity: 0.6;
+        }
+
+    .mytable2 textarea {
+        display: block;
+        width: 100%;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+        .mytable2 textarea:focus {
+            display: block;
+            width: 100%;
+            padding: 4px 6px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border-radius: 0.375rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+    .mytable2 input[type='file'] {
+        display: block;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .mytable2 input[type='date'], input[type='datetime'] {
+        display: block;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000000;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .mytable2 input[type='email'], .mGrid2 input[type='password'] {
+        display: block;
+        padding: 4px 6px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000000;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .mytable2 input[type='submit'] {
+        border: none;
+        background-color: #171188;
+        color: white;
+        padding: 6px 22px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+    /*-------------------------------------- table css End------------------------------------------------------*/
+
+    /*---------------------------------------table  button start------------------------------------------------*/
+    .mytable2 .save {
+        border: none;
+        background-color: #171188;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .submit {
+        border: none;
+        background-color: #171188;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .cancel {
+        border: none;
+        background-color: #d5d4e6;
+        color: #000000;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .reset {
+        border: none;
+        background-color: #d5d4e6;
+        color: #000000;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .edit {
+        border: none;
+        background-color: #171188;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .update {
+        border: none;
+        background-color: #198754;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .delete {
+        border: none;
+        background-color: #dc3545;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .approve {
+        border: none;
+        background-color: #198754;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .reject {
+        border: none;
+        background-color: #dc3545;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .no {
+        border: none;
+        background-color: #dc3545;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .yes {
+        border: none;
+        background-color: #198754;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .alert {
+        border: none;
+        background-color: #ffc107;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .pending {
+        border: none;
+        background-color: #ffc107;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 6px;
+        margin: 6px 6px;
+    }
+
+    .mytable2 .view {
+        border: none;
+        background-color: #198754;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 6px;
+        margin: 0px 6px;
+    }
+/*---------------------------------------table  button end------------------------------------------------*/

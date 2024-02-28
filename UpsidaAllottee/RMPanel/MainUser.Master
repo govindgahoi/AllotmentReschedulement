@@ -1,0 +1,728 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="/RMPanel/MainUser.master.cs" Inherits="UpsidaAllottee.RMPanel.MainUser" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+   <link rel="icon" href="images\upsidclogo.png" />
+   <title>Uttar Pradesh Industrial Development Authority</title>
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="/css/theme.css" rel="stylesheet" />
+    <link href="/css/Wizard.css" rel="stylesheet" />
+    <link href="/css/Main.css" rel="stylesheet" />
+    <link href="css/style4.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="/js/bootstrap.min.js"></script>
+    <link href="css/chosen.min.css" rel="stylesheet" />
+     <script src="js/jquery-ui.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon"/>
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+    <!-- Custom CSS Files -->
+<link href="assets/custom/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+   <link href="assets/custom/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="assets/custom/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="assets/custom/quill/quill.snow.css" rel="stylesheet"/>
+    <link href="assets/custom/quill/quill.bubble.css" rel="stylesheet"/>
+    <link href="assets/custom/remixicon/remixicon.css" rel="stylesheet"/>
+    <link href="assets/custom/simple-datatables/style.css" rel="stylesheet"/>
+    <link href="assets/css/TableCss.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet"/>
+     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+      <style type="text/css">
+          .content {
+              margin-left: 0px !important;
+          }
+       
+        .modalBackground
+        {
+            background-color: Black;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+        }
+        .modalPopup
+        {
+            background-color: #FFFFFF;
+            width: 300px;
+            border: 3px solid #0DA9D0;
+            border-radius: 12px;
+            padding: 0;
+        }
+        .modalPopup .header
+        {
+            background-color: #2FBDF1;
+            height: 30px;
+            color: White;
+            line-height: 30px;
+            text-align: center;
+            font-weight: bold;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        .modalPopup .body
+        {
+            padding: 10px;
+            min-height: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .modalPopup .footer
+        {
+            padding: 6px;
+        }
+        .modalPopup .yes, .modalPopup .no
+        {
+            height: 23px;
+            color: White;
+            line-height: 23px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .modalPopup .yes
+        {
+            background-color: #2FBDF1;
+            border: 1px solid #0DA9D0;
+        }
+        .modalPopup .no
+        {
+            background-color: #9F9F9F;
+            border: 1px solid #5C5C5C;
+        }
+    </style>
+
+     <style type="text/css">
+
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 1420px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+        @media only screen and (max-width: 992px) {
+            .topbtncollapse {
+                display:none;
+            }
+        }
+        @media only screen and (min-width: 768px) {
+            .content {
+                /*padding: 51px 15px 0px 15px;*/
+                min-height: 200px;
+            }
+
+            .ul-nav-div {
+                min-height: 92vh;
+                max-height: 92vh;
+                overflow-y: auto;
+            }
+
+           
+        }
+
+        .fgh {
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            top: 0
+        }
+
+        .hgf {
+            z-index: 1000;
+            margin: 300px auto;
+            padding: 10px;
+            width: 130px;
+            background-color: White;
+            border-radius: 10px;
+            filter: alpha(opacity=100);
+            opacity: 1;
+            -moz-opacity: 1
+        }
+
+        #line-chart {
+            height: 300px;
+            width: 800px;
+            margin: 0px auto;
+            margin-top: 1em;
+        }
+
+        .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+            color: rgb(45,45,45);
+        }
+
+        .sidebar-nav ul li a {
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .sidebar-nav.sticky {
+                /*display: block !important;*/
+                position: relative !important;
+            }
+
+            #sidebar {
+                max-width: 100% !important;
+                min-width: 100% !important;
+                margin-left: 0 !important;
+            }
+
+                #sidebar ul li a i {
+                    display: inline !important;
+                }
+
+                #sidebar ul li a {
+                    padding: 0 20px !important;
+                }
+
+                #sidebar ul ul a {
+                    color: #fff !important;
+                }
+
+                    #sidebar ul ul a:hover {
+                        color: #000 !important;
+                    }
+
+                    #sidebar ul ul a.currentPage {
+                        color: #000 !important;
+                    }
+        }
+
+        .my-dash-table-status tr td:nth-child(1) {
+            text-align: left;
+            position: absolute;
+            height: 50px;
+            width: 11.3em;
+            font-size: 12px;
+            left: 28px;
+        }
+
+        .my-dash-table-status tr th:nth-child(1) {
+            text-align: left;
+            position: absolute;
+            width: 10.3em;
+            left: 28px;
+        }
+
+        #divsectionrecommendation {
+            min-height: 154px;
+        }
+
+        #divoperational {
+            min-height: 154px;
+        }
+
+        #divvalidation {
+            min-height: 154px;
+        }
+
+        #divregulations {
+            min-height: 154px;
+        }
+
+        #divcurrentstatus {
+            min-height: 154px;
+        }
+
+        .status-bar-bottom {
+            position: relative;
+            background: #f5f5f5;
+            bottom: 0;
+            /* margin-top: 1px; */
+            border: 1px solid #ccc;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .ul-plot-view li {
+            border-right: 1px solid #ccc;
+            min-width: 257px;
+        }
+    </style>
+</head>
+<body class=" theme-blue">
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="DashBoard.aspx" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt=""/>
+                <%--<span class="d-none d-lg-block">RM</span>--%>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div>
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+               <%-- <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>--%>
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"/>
+                        <span class="d-none d-md-block dropdown-toggle ps-2">RM Activity</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6><asp:Label ID="Label1" runat="server" ></asp:Label></h6>
+                            <span>Regional Manager </span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-gear"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="Logout.aspx">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+     
+   
+    <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed show" href="DashBoard.aspx">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+        <%-- <li class="nav-item">
+        <a class="nav-link collapsed" href="https://epayments.in.worldline.com/" target="_blank">
+          <i class="bi bi-menu-button-wide"></i><span>Outstanding Dues</span>
+        </a>
+        
+      </li>--%>
+
+        <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Outstanding</span><span class="bi bi-chevron-down ms-auto"></span>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          
+            <li>
+           <%-- <a href="ots-transaction-details.aspx">
+              <i class="bi bi-grid"></i><span>OTS Dashboard</span>
+            </a>--%>
+              <a href="https://epayments.in.worldline.com/">
+              <i class="bi bi-grid"></i><span>Outstanding PNB Dues</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="Allottee_lager_Summery.aspx">
+              <i class="bi bi-journal-text"></i><span>Outstanding Dues Summary</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="Allottee-Data-Update.aspx">
+          <i class="bi bi-menu-button-wide"></i><span>Allottee Data Update</span>
+        </a>
+        
+      </li>
+         <li class="nav-item">
+        <a class="nav-link collapsed" href="Grievance-Redressal.aspx">
+          <i class="bi bi-menu-button-wide"></i><span>Grievance Redressal</span>
+        </a>
+        <%--<ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="Grievance-Redressal-System.aspx">
+              <i class="bi bi-grid"></i><span>Grievance Redressal System</span>
+            </a>
+          </li>
+          <li>
+            <a href="grievance-details.aspx">
+              <i class="bi bi-folder2"></i><span>Track Grievance</span>
+            </a>
+          </li>
+        </ul>--%>
+      </li>
+        
+        <!-- End Components Nav -->
+
+     <%-- <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>MOU</span><span class="bi bi-chevron-down ms-auto"></span>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="TrackMou.aspx">
+              <i class="bi bi-geo-alt-fill"></i><span>Track MOU</span>
+            </a>
+          </li>
+          <li>
+            <a href="AddMou.aspx">
+              <i class="bi bi-file-earmark-plus-fill"></i><span>Add MOU</span>
+            </a>
+          </li>
+        </ul>
+      </li>--%>
+         <li class="nav-item">
+        <a class="nav-link collapsed" href="KYA-request.aspx">
+          <i class="bi bi-card-list"></i>
+          <span>KYA Request</span>
+        </a>
+      </li>
+      
+
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="eAuction-Data-Mapping.aspx">
+          <i class="bi bi-question-circle"></i>
+          <span>E-Auction</span>
+        </a>
+      </li>
+     <!--
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-question-circle"></i>
+          <span>Interest Rate</span>
+        </a>
+      </li>
+     -->
+        <!-- End Register Page Nav -->
+         <li class="nav-item">
+        <a class="nav-link collapsed" href="Rm-Profile.aspx">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+      <%--<li class="nav-item">
+        <a class="nav-link collapsed" href="Login.aspx">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li>--%><!-- End Login Page Nav -->
+
+     
+
+    </ul>
+
+  </aside>
+    <form id="form1" runat="server">
+        <!--
+        <div class="navbar navbar-default" role="navigation">
+            
+            <div class="navbar-collapse collapse" style="height: 1px;">
+                <ul id="main-menu" class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span style="position: relative; top: 3px;"><b>Welcome </b>
+                                <asp:Label ID="lblname" runat="server"></asp:Label></span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        -->
+        <asp:Label runat="server" ID="lblempname"></asp:Label>
+        <div class="sidebar-nav sticky" id="navbarid-toggle">
+            <nav id="sidebar">
+                
+                        </div>
+                     </div>
+                </div>
+            </nav>
+        </div>
+          <asp:Label runat="server" ID="lblDataManager" Visible="false"></asp:Label>
+
+
+        <div class="content" id="mycontent">
+            <hr class="hr-main-menu" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    
+    </form>
+
+
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            <p><strong>Copyright 2023</strong>. All Rights Reserved. <a href="https://www.onlineupsida.com/" target="_blank">Uttar Pradesh State Industrial Development Authority, India</a></p>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script src="assets/custom/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/custom/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/custom/chart.js/chart.min.js"></script>
+    <script src="assets/custom/echarts/echarts.min.js"></script>
+     <script src="assets/custom/quill/quill.min.js"></script>
+    <script src="assets/custom/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/custom/tinymce/tinymce.min.js"></script>
+    <script src="assets/custom/php-email-form/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+<%------------------------------------------------- Menubar----------------------------------------------------%>
+  
+
+
+
+
+
+    <script>
+        var fn3 = (function () {
+            var first = true;
+            return function () {
+                first ? fn1() : fn2();
+                first = !first;
+            }
+        })();
+        function fn1() {
+            document.getElementById("mycontent").style.marginLeft = "135px";
+        }
+        function fn2() {
+            document.getElementById("mycontent").style.marginLeft = "244px";
+        }
+        if ($(window).width() <= 768) {
+            $(this).closest('').remove();
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $("[rel=tooltip]").tooltip();
+        $(function () {
+            $('.demo-cancel-click').click(function () { return false; });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        });;
+
+ $(".date1").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd MM yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        });;
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        prm.add_endRequest(function () {
+            $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            });;
+ $(".date1").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd MM yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        });;
+        });
+    </script>
+
+
+
+
+
+
+    <style>
+        .act .currentPage {
+            border-left: 4px solid #8989a6;
+            overflow: hidden;
+            background: #d2d2dd;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+
+
+        $(function () {
+            var url = window.location.pathname,
+                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
+
+            //   alert(urlRegExp);
+
+            $('.sidebar-nav  ul li a').each(function () {
+                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                    //   alert(this.href.replace(/\/$/, ''));
+                    $(this).addClass('act currentPage');
+                    $(this).parent().parent(".garima").css('display', 'block');
+                    $(this).parent().parent(".garima").removeClass("collapse").addClass("collapse in").css('font-weight', 'bold');
+                    $(this).parent().parent(".garima").prev("h3").css('color', 'green');
+                    $('#content').css("min-height", $('#sideLeft').height());
+                }
+            });
+
+
+            $('.sidebar-nav ul li ul li a').each(function () {
+                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                    //     alert(this.href.replace(/\/$/, ''));
+                    $(this).parent().addClass('act currentPage');
+                    $(this).parent().parent("ul").removeClass("collapse").addClass("collapse in");
+                    $(this).addClass('act currentPage');
+                 
+                }
+            });
+
+
+
+        });
+
+
+
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+            $(this).blur();
+            $(this).datepicker('hide');
+        });;
+ $(".datePresent").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", maxDate: "0" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            });;
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        prm.add_endRequest(function () {
+            $(".date").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", yearRange: "1960:+10" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            });;
+ $(".datePresent").datepicker({ changeMonth: true, changeYear: true, dateFormat: "dd/mm/yy", maxDate: "0" }).on('changeDate', function (ev) {
+                $(this).blur();
+                $(this).datepicker('hide');
+            });;
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            console.log("document ready!");
+
+            var $sticky = $('.sticky');
+            //var $stickyrStopper = $('.sticky-stopper');
+            if (!!$sticky.offset()) { // make sure ".sticky" element exists
+
+                var generalSidebarHeight = $sticky.innerHeight();
+                var stickyTop = $sticky.offset().top;
+                var stickOffset = 0;
+               
+
+                $(window).scroll(function () { // scroll event
+                    var windowTop = $(window).scrollTop(); // returns number
+
+                   
+                    if (stickyTop < windowTop + stickOffset) {
+                        $sticky.css({ position: 'fixed', top: stickOffset });
+                    } else {
+                        $sticky.css({ position: 'absolute', top: 'initial' });
+                    }
+                });
+
+            }
+           
+        });
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            var match = document.cookie.match(new RegExp('color=([^;]+)'));
+            if (match) var color = match[1];
+            if (color) {
+                $('body').removeClass(function (index, css) {
+                    return (css.match(/\btheme-\S+/g) || []).join(' ')
+                })
+                $('body').addClass('theme-' + color);
+            }
+
+            $('[data-popover="true"]').popover({ html: true });
+
+        });
+    </script>
+    <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

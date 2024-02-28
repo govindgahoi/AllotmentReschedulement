@@ -1,0 +1,300 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Allottee_Master.master.cs" Inherits="Allotment.AllotteePanel.Allottee_Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Allottee | Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="shortcut icon" type="dist/img/favicon-32x32.png" href="dist/img/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- overlayScrollbars -->
+    <link href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <!-- Theme style -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="dist/css/main.css" rel="stylesheet" />
+    <link href="dist/css/responsive.css" rel="stylesheet" />     
+    <link href="dist/css/TableCss.css" rel="stylesheet" />
+    <link href="build/scss/_sidebar-mini.scss" rel="sidebar"/>
+</head>
+<body class="hold-transition  sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link push_toggle" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+
+                <!-- Messages Dropdown Menu -->
+      <%--<li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>--%>
+      <!-- Notifications Dropdown Menu -->
+      <%--<li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8   requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>--%>
+        <!-- Messages Dropdown Menu End-->
+              <%--  <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>--%>
+                <%--Allottee Admin profile Start--%>
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image" />
+                        <span class="hidden-xs"><asp:Label ID="lbluserid" runat="server" ></asp:Label></span>
+                    </a>
+                    <ul class="dropdown-menu user-allottee">
+                        <li class="user-header">
+                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                            <p> Allottee - <asp:Label ID="lblname" runat="server" ></asp:Label><small>Member since Jan. 2023</small></p>
+                        </li>
+                        <li class="user-footer">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6 text-center">
+                                    <a href="AllotteeProfile.aspx" class="btn btn-default btn-flat">Profile</a>
+                                </div>
+                                 <div class="col-md-6 col-lg-6 col-sm-6 col-xl-6 text-center">
+                                    <a href="Logout.aspx" class="btn btn-default btn-flat">Sign out</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                 <%--Allottee Admin profile End--%>
+            </ul>
+        </nav>
+         <%--main-sidebar Start--%>
+        <aside class="main-sidebar elevation-4">
+            <a href="Default.aspx" class="brand-link">
+                <img src="dist/img/credit/upsida-logo.png" alt="upsida Logo" class="img-fluid" />
+            </a>
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item menu-open">
+                            <a href="DashBoard.aspx" class="nav-link active">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AllotteeDues.aspx" class="nav-link">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>Outstanding Dues</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AddAllotmentNo.aspx" class="nav-link">
+                                <i class="nav-icon far fa-plus-square"></i>
+                                <p>Add Allotment No</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                           <%-- <a href="ServiceTracker.aspx" class="nav-link">--%>
+                                  <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-map-marker"></i>
+                                <p>Service Tracker</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <%--<a href="AllotteeLedger.aspx" class="nav-link">--%>
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>Allottee Ledger</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                           <%-- <a href="AllotteeDetails.aspx" class="nav-link">--%>
+                                  <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>Allottee Details</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Grievance Redressal
+                                      <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="http://onlineupsida.com/allottee.aspx" class="nav-link" target="_blank">
+                                        <i class="far fa-edit nav-icon"></i>
+                                        <p>Register Grievance</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://onlineupsida.com/tracking.aspx" class="nav-link" target="_blank">
+                                        <i class="far fa-map nav-icon"></i>
+                                        <p>Track Grievance Status </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="KYA.aspx" class="nav-link">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>KYA Form</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                           <%-- <a href="AllotteeProfile.aspx" class="nav-link">--%>
+                             <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>Allottee Profile</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="SocialMedia.aspx" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>Social Media</p>
+                            </a>
+                        </li>
+                        <%--<li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>Settings</p>
+                            </a>
+                        </li>--%>
+                        <%--<li class="nav-item">
+                            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>Settings</p>
+                            </a>
+                        </li>--%>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <aside class="control-sidebar control-sidebar-dark">
+        </aside>
+        <%--main-sidebar End--%>
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+       <%--main-footer Start--%>
+        <footer class="main-footer">
+            <div class="text-center">
+                <p>Copyright © 2023 | UPSIDA Kanpur | All Rights Reserved | Designed & Developed by: <a href="https://www.infoneotech.com/" target="_blank">Infoneo Technologies Pvt. Ltd.</a> </p>
+            </div>
+        </footer>
+          <%--main-footer End--%>
+    </div>
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- allottee App -->
+    <script src="dist/js/allottee.js"></script>
+    <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+    <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- allottee for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- allottee dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard2.js"></script>
+</body>
+</html>
+
