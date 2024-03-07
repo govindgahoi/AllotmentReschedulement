@@ -197,7 +197,8 @@ namespace Allotment.AllotteePanel
                 otp += character;
             }
             Session["OTPALL"] = otp.ToString();
-            MailAddress mailfrom = new MailAddress("eservicesotp@outlook.com");
+            MailAddress mailfrom = new MailAddress("support@onlineupsidc.com");
+           // MailAddress mailfrom = new MailAddress("eservicesotp@outlook.com");
             MailAddress mailto = new MailAddress(email);
             MailMessage newmsg = new MailMessage(mailfrom, mailto);
             //newmsg.IsBodyHtml = true;
@@ -213,14 +214,21 @@ namespace Allotment.AllotteePanel
             newmsg.Subject = "UPSIDA : OTP verification for Allotment No ";
             newmsg.BodyHtml = StrContent;
 
+                                SmtpClient client = new SmtpClient();
+                                client.Host = "mail.onlineupsidc.com";
+                                client.Port = 587;
+                                client.Username = mailfrom.Address;
+                                client.Password = "Edc7!RFvT@8GbYU";
+                                client.ConnectionProtocols = ConnectionProtocols.Ssl;
+                                client.SendOne(newmsg);
 
-            SmtpClient client = new SmtpClient();
-            client.Host = "smtp.outlook.com";
-            client.Port = 587;
-            client.Username = mailfrom.Address;
-            client.Password = "upsida12345";
-            client.ConnectionProtocols = ConnectionProtocols.Ssl;
-            client.SendOne(newmsg);
+            //SmtpClient client = new SmtpClient();
+            //client.Host = "smtp.outlook.com";
+           // client.Port = 587;
+            //client.Username = mailfrom.Address;
+            //client.Password = "upsida12345";
+            //client.ConnectionProtocols = ConnectionProtocols.Ssl;
+            //client.SendOne(newmsg);
         }
     }
 }
