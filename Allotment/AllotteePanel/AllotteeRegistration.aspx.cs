@@ -195,8 +195,8 @@ namespace Allotment.AllotteePanel
                             int retVal = objServiceTimelinesBLL.NewAllotteeRegistration(objServiceTimelinesBEL);
                             if (retVal > 0)
                             {
-                             
-                                MailAddress mailfrom = new MailAddress("eservicesotp@outlook.com");
+                                MailAddress mailfrom = new MailAddress("support@onlineupsidc.com");
+                               // MailAddress mailfrom = new MailAddress("eservicesotp@outlook.com");
                                 MailAddress mailto = new MailAddress(txtEmail.Text);
                                 MailMessage newmsg = new MailMessage(mailfrom, mailto);
                                 //newmsg.IsBodyHtml = true;
@@ -212,13 +212,21 @@ namespace Allotment.AllotteePanel
                                 newmsg.Subject = "UPSIDA : mail for registration details";
                                 newmsg.BodyHtml = StrContent;
 
-                                SmtpClient client = new SmtpClient();
-                                client.Host = "smtp.outlook.com";
+                                 SmtpClient client = new SmtpClient();
+                                client.Host = "mail.onlineupsidc.com";
                                 client.Port = 587;
                                 client.Username = mailfrom.Address;
-                                client.Password = "upsida12345";
+                                client.Password = "Edc7!RFvT@8GbYU";
                                 client.ConnectionProtocols = ConnectionProtocols.Ssl;
-                               client.SendOne(newmsg);
+                                client.SendOne(newmsg);
+
+                                //SmtpClient client = new SmtpClient();
+                                //client.Host = "smtp.outlook.com";
+                                //client.Port = 587;
+                                //client.Username = mailfrom.Address;
+                                //client.Password = "upsida12345";
+                                //client.ConnectionProtocols = ConnectionProtocols.Ssl;
+                               // client.SendOne(newmsg);
                                 //File.WriteAllBytes(Server.MapPath(filePath), Session["Tracing"] as byte[]);
                                 //txtVerifyOTP.Text = "";
                                 //string msg = "Allottee Registration done Successfully. Details send on Your Email";
@@ -311,7 +319,8 @@ namespace Allotment.AllotteePanel
             }
             Session.Timeout = 15;
             Session["OTPR"] = otp.ToString();
-            MailAddress mailfrom = new MailAddress("eservicesotp@outlook.com");
+            MailAddress mailfrom = new MailAddress("support@onlineupsidc.com");
+           // MailAddress mailfrom = new MailAddress("eservicesotp@outlook.com");
             MailAddress mailto = new MailAddress(txtEmail.Text);
             MailMessage newmsg = new MailMessage(mailfrom, mailto);
             //newmsg.IsBodyHtml = true;
@@ -328,14 +337,21 @@ namespace Allotment.AllotteePanel
             newmsg.Subject = "UPSIDA : OTP verification for registration ";
             newmsg.BodyHtml = StrContent;
 
+                SmtpClient client = new SmtpClient();
+                                client.Host = "mail.onlineupsidc.com";
+                                client.Port = 587;
+                                client.Username = mailfrom.Address;
+                                client.Password = "Edc7!RFvT@8GbYU";
+                                client.ConnectionProtocols = ConnectionProtocols.Ssl;
+                                client.SendOne(newmsg);
 
-            SmtpClient client = new SmtpClient();
-            client.Host = "smtp.outlook.com";
-            client.Port = 587;
-            client.Username = mailfrom.Address;
-            client.Password = "upsida12345";
-            client.ConnectionProtocols = ConnectionProtocols.Ssl;
-          client.SendOne(newmsg);
+           // SmtpClient client = new SmtpClient();
+          //  client.Host = "smtp.outlook.com";
+           // client.Port = 587;
+          //  client.Username = mailfrom.Address;
+          //  client.Password = "upsida12345";
+          //  client.ConnectionProtocols = ConnectionProtocols.Ssl;
+         // client.SendOne(newmsg);
         }
 
         public void RegMailSend()
