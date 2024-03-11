@@ -82,9 +82,9 @@ namespace Allotment
                 Page.Form.Enctype = "multipart/form-data";
                 con = new SqlConnection(ConfigurationManager.ConnectionStrings["conStr"].ConnectionString);
 
-                //ServiceReqNo = Request.QueryString["ServiceReqNo"];
-                ServiceReqNo = "SER20230912/1000/1654/83069";
-                Session["ServiceReqNo"] = ServiceReqNo;
+               // ServiceReqNo = Request.QueryString["ServiceReqNo"];
+             ServiceReqNo = "SER20230912/1043/1654/83069";
+                //Session["ServiceReqNo"] = ServiceReqNo;
 
                 string[] SerIdarray = ServiceReqNo.Split('/');
                 TypeID = SerIdarray[1].ToString();
@@ -138,7 +138,7 @@ namespace Allotment
                 if (!IsPostBack)
                 {
                     lblFormName.Text = "Request for Reschedulement of Dues";
-                    if (TypeID == "1003")
+                    if (TypeID == "1043")
                     {
                         lblFormName.Text = "Application For Change Of Project";
                     }
@@ -566,9 +566,9 @@ namespace Allotment
         protected void GetGridData(string SerReqNo)
         {
             //string constring = System.Configuration.ConfigurationManager.ConnectionStrings["conStr"].ConnectionString;
-            //  SqlConnection con = new SqlConnection(constring);
+            //SqlConnection con = new SqlConnection(constring);
             ////SqlConnection con = new SqlConnection();
-            //SqlCommand cmd = new SqlCommand("[sp_GetAllotteeReschedulement_test2] " , con);
+            //SqlCommand cmd = new SqlCommand("[sp_GetAllotteeReschedulement_test2] ", con);
             //SqlDataAdapter adp = new SqlDataAdapter(cmd);
             //DataTable dt = new DataTable();
             //adp.Fill(dt);
@@ -634,7 +634,7 @@ namespace Allotment
         protected void AccountsDetailsGrid_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             AccountsDetailsGrid.PageIndex = e.NewPageIndex;
-            //    //grdViewNews.PageSize = 5;
+               //grdViewNews.PageSize = 5;
             GetGridData("");
 
         }
